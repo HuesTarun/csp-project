@@ -1296,40 +1296,53 @@ body[data-lang="te"] .section-title {
     font-size: clamp(1.75rem, 5vw, 2.5rem);
   }
 
+  /* Navbar on mobile — remove backdrop-filter to prevent creating a containing block for fixed overlays */
+  .navbar {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    background: rgba(250, 243, 235, 0.98);
+  }
+
+  .navbar.scrolled {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    background: rgba(250, 243, 235, 0.98);
+  }
+
   /* ========================
      MOBILE NAVIGATION
      ======================== */
-  /* Hide desktop links */
+  /* Hide desktop links, display as full-screen modal when opened */
   .nav-links {
     display: none;
     position: fixed;
     top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(250, 243, 235, 0.97);
-    backdrop-filter: blur(24px);
-    -webkit-backdrop-filter: blur(24px);
+    width: 100vw;
+    height: 100vh;
+    height: 100dvh;
+    background: #FAF3EB;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 0.35rem;
-    z-index: 999;
-    padding: 6rem 2rem 4rem;
+    z-index: 1005;
+    padding: 4.5rem 1.25rem 2.5rem;
     overflow-y: auto;
-    /* Slide-in animation */
+    -webkit-overflow-scrolling: touch;
+    box-sizing: border-box;
     animation: none;
   }
 
   .nav-links.open {
     display: flex;
-    animation: nav-slide-in 0.3s cubic-bezier(0.4, 0, 0.2, 1) both;
+    animation: nav-slide-in 0.25s cubic-bezier(0.4, 0, 0.2, 1) both;
   }
 
   @keyframes nav-slide-in {
     from {
       opacity: 0;
-      transform: translateY(-16px);
+      transform: translateY(-12px);
     }
     to {
       opacity: 1;
@@ -1338,15 +1351,16 @@ body[data-lang="te"] .section-title {
   }
 
   .nav-links a {
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 600;
-    padding: 0.8rem 2.5rem;
-    border-radius: 14px;
+    padding: 0.55rem 1.5rem;
+    border-radius: 12px;
     width: 100%;
-    max-width: 320px;
+    max-width: 280px;
     text-align: center;
     color: var(--clr-soil-800);
     transition: background 0.2s ease, color 0.2s ease;
+    flex-shrink: 0;
   }
 
   .nav-links a:hover,

@@ -1,6 +1,5 @@
 # 🌾 Community Service Project (CSP) 2026
 ## Soil Erosion Awareness and Effective Soil Management in Chandragudem
-
 ---
 
 ## 📌 Project Overview
@@ -46,4 +45,13 @@ A responsive, bilingual (**English** & **తెలుగు**) web application b
 - **📅 Andhra Pradesh Seasonal Farming Calendar**: Month-by-month agricultural actions tailored for Kharif, Rabi, and Zaid seasons.
 - **🏛️ Government Welfare Scheme Directory**: Direct verified access and step-by-step guidance for **APMIP** (90% drip/sprinkler subsidy), **Yantra Seva CHC**, **Soil Health Card (SHC)**, and **PM-KUSUM**.
 - **📞 Emergency Support Directory**: Key contacts for Rythu Bharosa Kendram (RBK), Mandal Agricultural Officer (MAO), and Kisan Call Center (1551).
+
+---
+
+## 📄 Academic Project Reports
+
+- **Microsoft Word Format**: [`csp_report.docx`](csp_report.docx) — Formal 2026 report with Certificate, Declaration, Acknowledgements, Objectives, Methodology, Geo-tagged Field Documentation, Socio-Economic Analysis, and References.
+- **Printable HTML Format**: [`csp_report.html`](csp_report.html) — Open in any browser and use the print button to generate a clean PDF.
+
+---
 
