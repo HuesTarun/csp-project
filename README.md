@@ -1,0 +1,109 @@
+# 🌾 Community Service Project (CSP) 2026
+## Soil Erosion Awareness and Effective Soil Management in Chandragudem
+
+[![Project Status](https://img.shields.io/badge/Status-Completed-success)](https://github.com/HuesTarun/csp-project)
+[![Institution](https://img.shields.io/badge/Institution-LBRCE%20(Autonomous)-blue)](https://www.lbrce.ac.in)
+[![Affiliation](https://img.shields.io/badge/Affiliated%20To-JNTUK%2C%20Kakinada-orange)](https://jntuk.edu.in)
+[![License](https://img.shields.io/badge/Language-English%20%7C%20%E0%B0%A4%E0%B1%86%E0%B0%B2%E0%B1%81%E0%B0%97%E0%B1%81-brightgreen)](#)
+
+---
+
+## 📌 Project Overview
+
+This **Community Service Project (CSP)** was conducted by third-year Computer Science & Engineering students from **Lakireddy Bali Reddy College of Engineering (Autonomous)**, Mylavaram, during the academic period 2025–2026.
+
+The project addresses **soil erosion, soil degradation, and practical soil management techniques** in **Chandragudem Village**, Mylavaram Mandal, NTR District, Andhra Pradesh. Through extensive field surveys, farmer interviews, and soil profile studies, our team developed actionable remediation strategies and an interactive bilingual digital platform to empower the local farming community.
+
+---
+
+## 🏛️ Academic Details
+
+| Parameter | Details |
+|---|---|
+| **Program** | Bachelor of Technology (B.Tech) |
+| **Department** | Computer Science and Engineering (CSE) |
+| **Institution** | Lakireddy Bali Reddy College of Engineering (Autonomous), Mylavaram |
+| **University** | Jawaharlal Nehru Technological University Kakinada (JNTUK) |
+| **Academic Year** | 2025 – 2026 |
+| **Faculty Guide** | **Ms. T. Vineetha**, Assistant Professor, Dept. of CSE |
+| **Study Area** | Chandragudem Village, Mylavaram Mandal, NTR District, AP |
+
+### 👥 Project Team
+| Roll Number | Name / Project Role |
+|---|---|
+| `24761A05T0` | Field Survey & Soil Health Analysis |
+| `24761A05T1` | Community Interaction & Questionnaire Administration |
+| `24761A05T2` | Data Compilation & Geo-Tagging |
+| `24761A05T4` | Documentation & Academic Report Compilation |
+| `24761A05T5` | Web Platform Development & Telugu Localization |
+
+---
+
+## 💻 Interactive Bilingual Web Platform (`/website`)
+
+A responsive, bilingual (**English** & **తెలుగు**) web application built for local farmers and field officers.
+
+### ✨ Key Features:
+- **🌐 Strict Single-Language Toggle**: Switch between clean English and native Telugu without mixed text.
+- **📊 Soil Erosion Risk Calculator**: Interactive risk assessment calculating slope, soil texture, rainfall intensity, tillage method, and vegetative cover to deliver immediate risk categorization and priority remediation steps in Telugu.
+- **🧱 Living Soil Profile Architecture**: Visual breakdown of O, A, B, and C soil horizons with depth guidelines and root zone protection advice.
+- **📐 Technical Soil Conservation Engineering**: Precise engineering parameters for stone bunds, continuous contour trenches (CCT), vetiver grass buffers, check dams, and organic mulching.
+- **📅 Andhra Pradesh Seasonal Farming Calendar**: Month-by-month agricultural actions tailored for Kharif, Rabi, and Zaid seasons.
+- **🏛️ Government Welfare Scheme Directory**: Direct verified access and step-by-step guidance for **APMIP** (90% drip/sprinkler subsidy), **Yantra Seva CHC**, **Soil Health Card (SHC)**, and **PM-KUSUM**.
+- **📞 Emergency Support Directory**: Key contacts for Rythu Bharosa Kendram (RBK), Mandal Agricultural Officer (MAO), and Kisan Call Center (1551).
+
+---
+
+## 📁 Repository Structure
+
+```text
+├── website/
+│   ├── index.html         # Main bilingual interactive application
+│   ├── style.css          # Responsive CSS styling with wide 1560px grid design
+│   ├── script.js          # Bilingual toggle, risk calculator logic, smooth navigation
+│   └── images/            # Farmland hero background & field study photos
+├── csp_report.docx        # Full Academic Project Report (Word format, 2026 guidelines)
+├── csp_report.html        # Complete Printable HTML Project Report (with 1-click PDF export)
+├── build_full_csp_project.py # Python script for academic docx generation
+├── build_html_report.py   # Python script for standalone HTML report generation
+├── .gitignore             # Git ignore configuration
+└── README.md              # Project documentation
+```
+
+---
+
+## 🚀 How to Run the Website Locally
+
+No build tools or heavy packages required. Simply serve the `website/` directory using Python:
+
+```bash
+# Clone the repository
+git clone https://github.com/HuesTarun/csp-project.git
+
+# Navigate to the project folder
+cd csp-project/website
+
+# Start a local HTTP server
+python -m http.server 8080
+```
+
+Open your browser and navigate to:
+```
+http://localhost:8080/
+```
+
+---
+
+## 📄 Academic Project Reports
+
+- **Microsoft Word Format**: [`csp_report.docx`](csp_report.docx) — Formal 2026 report with Certificate, Declaration, Acknowledgements, Objectives, Methodology, Geo-tagged Field Documentation, Socio-Economic Analysis, and References.
+- **Printable HTML Format**: [`csp_report.html`](csp_report.html) — Open in any browser and use the print button to generate a clean PDF.
+
+---
+
+## 🌟 Acknowledgements
+
+We express our heartfelt gratitude to:
+- **Ms. T. Vineetha**, Assistant Professor, Dept. of CSE, for her continuous mentorship and invaluable guidance.
+- **Dr. D. Veeraiah**, Professor & Head, Department of CSE, LBRCE.
+- The village elders and farming community of **Chandragudem Village** for their hospitality, cooperation, and active participation in our field studies.
