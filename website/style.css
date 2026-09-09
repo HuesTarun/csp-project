@@ -335,7 +335,8 @@ ol {
   height: 2.5px;
   background: var(--clr-soil-700);
   border-radius: 2px;
-  transition: var(--transition-fast);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.2s ease;
+  transform-origin: center;
 }
 
 /* ===========================
@@ -1244,13 +1245,15 @@ body[data-lang="te"] .section-title {
 }
 
 /* ===========================
-   RESPONSIVE
+   RESPONSIVE — TABLET (≤ 900px)
    =========================== */
 @media (max-width: 900px) {
+  /* --- Hero --- */
   .hero-content {
     grid-template-columns: 1fr;
     text-align: center;
     gap: 2rem;
+    padding: 3rem 1.5rem;
   }
 
   .hero-desc {
@@ -1264,6 +1267,8 @@ body[data-lang="te"] .section-title {
 
   .hero-stats {
     justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
   }
 
   .hero-visual {
@@ -1271,15 +1276,30 @@ body[data-lang="te"] .section-title {
   }
 
   .hero-illustration {
-    max-width: 300px;
+    max-width: 280px;
     margin: 0 auto;
   }
 
+  /* --- About grid --- */
   .about-grid {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
 
+  /* --- Prevention single col --- */
+  .prevention-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* --- Section titles --- */
+  .section-title {
+    font-size: clamp(1.75rem, 5vw, 2.5rem);
+  }
+
+  /* ========================
+     MOBILE NAVIGATION
+     ======================== */
+  /* Hide desktop links */
   .nav-links {
     display: none;
     position: fixed;
@@ -1287,71 +1307,405 @@ body[data-lang="te"] .section-title {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(250, 243, 235, 0.98);
-    backdrop-filter: blur(20px);
+    background: rgba(250, 243, 235, 0.97);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 0.5rem;
+    gap: 0.35rem;
     z-index: 999;
+    padding: 6rem 2rem 4rem;
+    overflow-y: auto;
+    /* Slide-in animation */
+    animation: none;
   }
 
   .nav-links.open {
     display: flex;
+    animation: nav-slide-in 0.3s cubic-bezier(0.4, 0, 0.2, 1) both;
+  }
+
+  @keyframes nav-slide-in {
+    from {
+      opacity: 0;
+      transform: translateY(-16px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 
   .nav-links a {
-    font-size: 1.2rem;
-    padding: 0.75rem 2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 0.8rem 2.5rem;
+    border-radius: 14px;
+    width: 100%;
+    max-width: 320px;
+    text-align: center;
+    color: var(--clr-soil-800);
+    transition: background 0.2s ease, color 0.2s ease;
   }
 
+  .nav-links a:hover,
+  .nav-links a.active {
+    background: var(--clr-green-50);
+    color: var(--clr-green-700);
+  }
+
+  /* Hamburger visible */
   .nav-hamburger {
     display: flex;
+    background: none;
+    border: none;
+    padding: 0.5rem;
+    z-index: 1010;
+    cursor: pointer;
   }
 
-  .section-title {
-    font-size: clamp(1.75rem, 5vw, 2.5rem);
+  /* Hamburger → X animation when menu is open */
+  .nav-hamburger.open span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+  .nav-hamburger.open span:nth-child(2) {
+    opacity: 0;
+    transform: scaleX(0);
+  }
+  .nav-hamburger.open span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
   }
 
-  .prevention-grid {
-    grid-template-columns: 1fr;
+  /* Lang toggle goes INSIDE nav overlay on mobile — stays in top-right on desktop */
+  /* Ensure there's enough room in mobile navbar */
+  .nav-content {
+    padding: 0 1rem;
+  }
+
+  .nav-logo span:last-child {
+    font-size: 1.1rem;
   }
 }
 
+/* ===========================
+   RESPONSIVE — MOBILE (≤ 600px)
+   =========================== */
 @media (max-width: 600px) {
   :root {
-    --section-padding: 4rem 1.25rem;
+    --section-padding: 3.5rem 0;
   }
 
   .container {
-    padding: 0 1.25rem;
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  html {
+    scroll-padding-top: 70px;
+  }
+
+  /* --- Navbar --- */
+  .navbar {
+    padding: 0.75rem 0;
+  }
+
+  .nav-content {
+    padding: 0 1rem;
+    gap: 0.5rem;
+  }
+
+  .nav-logo .logo-icon {
+    width: 34px;
+    height: 34px;
+    font-size: 1.1rem;
+  }
+
+  .nav-logo {
+    font-size: 1rem;
+    gap: 0.5rem;
+  }
+
+  /* Compact lang toggle */
+  .lang-toggle {
+    padding: 0.2rem;
+  }
+
+  .lang-btn {
+    padding: 0.3rem 0.6rem;
+    font-size: 0.72rem;
+  }
+
+  /* --- Hero --- */
+  .hero {
+    min-height: 100svh;
+    padding-top: 70px;
+  }
+
+  .hero-content {
+    padding: 2rem 1rem 3rem;
+    gap: 1.5rem;
+  }
+
+  .hero-badge {
+    font-size: 0.72rem;
+    padding: 0.35rem 0.75rem;
+  }
+
+  .hero-title {
+    font-size: clamp(1.8rem, 7.5vw, 2.8rem);
+  }
+
+  body[data-lang="te"] .hero-title {
+    font-size: clamp(1.5rem, 6vw, 2.2rem);
+    line-height: 1.5;
+  }
+
+  .hero-desc {
+    font-size: 0.97rem;
+    line-height: 1.7;
+    margin-bottom: 1.75rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 0.75rem;
+    align-items: stretch;
+  }
+
+  .btn {
+    width: 100%;
+    justify-content: center;
+    padding: 0.9rem 1.5rem;
+    font-size: 0.92rem;
+  }
+
+  .hero-illustration {
+    max-width: 220px;
   }
 
   .hero-emoji-center {
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
 
   .hero-float-icon {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 
+  /* Stats — 2×2 grid */
+  .hero-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    text-align: center;
+  }
+
+  .hero-stat-value {
+    font-size: 1.5rem;
+  }
+
+  .hero-stat-label {
+    font-size: 0.75rem;
+  }
+
+  /* --- Section label & subtitle --- */
+  .section-label {
+    font-size: 0.72rem;
+    padding: 0.3rem 0.75rem;
+  }
+
+  .section-subtitle {
+    font-size: 1rem;
+  }
+
+  /* --- About section --- */
+  .soil-profile-card {
+    padding: 1.25rem;
+  }
+
+  .soil-profile-header {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .layer-bar {
+    padding: 0.7rem 0.85rem;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+  }
+
+  /* --- All cards — force single column --- */
   .causes-grid,
   .effects-grid,
   .tips-grid,
   .schemes-grid,
   .guide-grid,
   .calendar-grid,
-  .contact-grid {
-    grid-template-columns: 1fr;
+  .contact-grid,
+  .team-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1rem;
   }
 
-  .hero-stats {
+  /* --- Cause / Effect cards --- */
+  .cause-card,
+  .effect-card,
+  .prevention-card,
+  .tip-card,
+  .scheme-card,
+  .guide-card,
+  .calendar-card,
+  .contact-card,
+  .team-card {
+    padding: 1.5rem 1.25rem;
+  }
+
+  /* Tip card — horizontal icon layout is fine, reduce icon size */
+  .tip-icon {
+    width: 42px;
+    height: 42px;
+    font-size: 1.3rem;
+    border-radius: 10px;
+    flex-shrink: 0;
+  }
+
+  /* Guide specs — force 1-col */
+  .guide-specs {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+
+  /* --- Calculator --- */
+  .calc-wrapper {
+    padding: 1.25rem;
+    margin: 1.5rem auto 0;
+    border-radius: var(--card-radius);
+  }
+
+  .calc-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .calc-result-box {
+    padding: 1.25rem;
+  }
+
+  .form-select,
+  .form-input {
+    padding: 0.8rem 0.9rem;
+    font-size: 0.9rem;
+  }
+
+  /* Calc result header — stack vertically */
+  .calc-result-box > div:first-child {
     flex-direction: column;
-    gap: 1rem;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .risk-level-badge {
+    font-size: 0.88rem;
+    padding: 0.4rem 1rem;
+  }
+
+  /* --- Field Guide card specs --- */
+  .guide-card {
+    padding: 1.25rem;
+  }
+
+  /* --- Team section --- */
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 0.85rem;
+  }
+
+  .team-card {
+    padding: 1.25rem 0.85rem;
+  }
+
+  .team-avatar {
+    width: 55px;
+    height: 55px;
+    font-size: 1.3rem;
+  }
+
+  /* --- Contact cards --- */
+  .contact-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* --- Footer --- */
+  .footer {
+    padding: 2.5rem 1rem;
+  }
+
+  /* --- Scheme links — bigger tap targets --- */
+  .scheme-link {
+    padding: 0.2rem 0;
+    min-height: 36px;
+    display: inline-flex;
     align-items: center;
   }
 
-  .hero-stat {
+  /* --- Erosion type items --- */
+  .erosion-type-item {
+    gap: 0.75rem;
+    padding: 1rem;
+  }
+
+  .erosion-type-icon {
+    width: 42px;
+    height: 42px;
+    font-size: 1.25rem;
+    border-radius: 10px;
+  }
+
+  /* --- Soil health tips — horizontal layout kept but adjusted --- */
+  .tip-card {
+    gap: 0.75rem;
+  }
+
+  /* --- Prevention number styling on mobile --- */
+  .prevention-number {
+    font-size: 2.25rem;
+  }
+
+  /* --- Scroll indicator off on small screens --- */
+  .scroll-indicator {
+    display: none;
+  }
+}
+
+/* ===========================
+   RESPONSIVE — SMALL MOBILE (≤ 400px)
+   =========================== */
+@media (max-width: 400px) {
+  .hero-title {
+    font-size: clamp(1.6rem, 8vw, 2rem);
+  }
+
+  .nav-logo > span:last-child {
+    display: none; /* show only icon on tiny screens */
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .hero-stats {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .lang-btn {
+    padding: 0.25rem 0.5rem;
+  }
+
+  .hero-badge {
+    font-size: 0.65rem;
+    max-width: 90%;
     text-align: center;
   }
 }

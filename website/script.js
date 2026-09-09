@@ -131,12 +131,26 @@ window.addEventListener('DOMContentLoaded', () => {
   if (hamburger && navLinks) {
     hamburger.addEventListener('click', () => {
       navLinks.classList.toggle('open');
+      hamburger.classList.toggle('open');
+      // Prevent body scroll when menu is open
+      document.body.style.overflow = navLinks.classList.contains('open') ? 'hidden' : '';
     });
 
     navLinks.querySelectorAll('a').forEach(link => {
       link.addEventListener('click', () => {
         navLinks.classList.remove('open');
+        hamburger.classList.remove('open');
+        document.body.style.overflow = '';
       });
+    });
+
+    // Close menu on outside click / escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && navLinks.classList.contains('open')) {
+        navLinks.classList.remove('open');
+        hamburger.classList.remove('open');
+        document.body.style.overflow = '';
+      }
     });
   }
 
