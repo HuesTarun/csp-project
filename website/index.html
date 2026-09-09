@@ -1,0 +1,1797 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soil Management & Erosion Awareness | Chandragudem CSP | LBRCE CSE</title>
+  <meta name="description"
+    content="Community Service Project by LBRCE CSE students on Soil Erosion Awareness and Effective Soil Management in Chandragudem Village, Mylavaram, Andhra Pradesh. Available in English & Telugu.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+
+<body data-lang="en">
+
+  <!-- Floating background particles -->
+  <div class="hero-particles" id="particles"></div>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-content">
+      <a href="#home" class="nav-logo">
+        <span class="logo-icon">🌱</span>
+        <span>
+          <span class="en-only">SoilCare Chandragudem</span>
+          <span class="te-only">నేల సంరక్షణ - చంద్రగూడెం</span>
+        </span>
+      </a>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#home" class="active">
+          <span class="en-only">Home</span><span class="te-only">హోమ్</span>
+        </a>
+        <a href="#about">
+          <span class="en-only">About Erosion</span><span class="te-only">నేల కోత అంటే ఏమిటి?</span>
+        </a>
+        <a href="#causes">
+          <span class="en-only">Causes</span><span class="te-only">కారణాలు</span>
+        </a>
+        <a href="#prevention">
+          <span class="en-only">Prevention</span><span class="te-only">నివారణ పద్ధతులు</span>
+        </a>
+        <a href="#soil-health">
+          <span class="en-only">Soil Testing</span><span class="te-only">మట్టి పరీక్ష</span>
+        </a>
+        <a href="#schemes">
+          <span class="en-only">Govt Schemes</span><span class="te-only">ప్రభుత్వ పథకాలు</span>
+        </a>
+        <a href="#calculator">
+          <span class="en-only">Risk Calculator</span><span class="te-only">కోత అంచనా యంత్రం</span>
+        </a>
+        <a href="#field-guide">
+          <span class="en-only">Field Guide</span><span class="te-only">సాంకేతిక గైడ్</span>
+        </a>
+        <a href="#team">
+          <span class="en-only">CSP Team</span><span class="te-only">మా బృందం</span>
+        </a>
+        <a href="#contact">
+          <span class="en-only">Helpline</span><span class="te-only">సహాయ కేంద్రం</span>
+        </a>
+      </div>
+
+      <!-- Language Toggle -->
+      <div class="lang-toggle">
+        <button class="lang-btn active" id="btnLangEn" onclick="setLanguage('en')">English</button>
+        <button class="lang-btn" id="btnLangTe" onclick="setLanguage('te')">తెలుగు</button>
+      </div>
+
+      <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section with Lush Green Farmland Background -->
+  <header class="hero" id="home">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <div class="hero-badge">
+          <span>📍</span>
+          <span class="en-only">LBRCE CSE | Community Service Project 2026 | Chandragudem Village</span>
+          <span class="te-only">ఎల్.బి.ఆర్.సి.ఇ సి.ఎస్.ఇ | కమ్యూనిటీ సర్వీస్ ప్రాజెక్ట్ 2026 | చంద్రగూడెం గ్రామం</span>
+        </div>
+
+        <h1 class="hero-title">
+          <span class="en-only">Preserving Fertile Soil, <span class="highlight">Empowering Farmers</span></span>
+          <span class="te-only">నేల సంరక్షణ - <span class="highlight">రైతన్నల సమగ్ర వికాసం</span></span>
+        </h1>
+
+        <p class="hero-desc">
+          <span class="en-only">
+            A dedicated community initiative by Lakireddy Bali Reddy College of Engineering students to combat
+            agricultural soil erosion, promote organic management, and boost crop yields in Chandragudem, Mylavaram
+            Mandal, NTR District, Andhra Pradesh.
+          </span>
+          <span class="te-only">
+            ఆంధ్రప్రదేశ్ ఎన్టీఆర్ జిల్లా మైలవరం మండలం చంద్రగూడెం గ్రామంలో వ్యవసాయ నేల కోతను నివారించి, సేంద్రీయ నేల
+            యాజమాన్యం మరియు మెరుగైన పంట దిగుబడుల సాధనకు లకిరెడ్డి బాలిరెడ్డి ఇంజనీరింగ్ కళాశాల విద్యార్థుల ప్రత్యేక
+            చొరవ.
+          </span>
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#calculator" class="btn btn-primary">
+            <span class="en-only">📊 Check Your Soil Erosion Risk</span>
+            <span class="te-only">📊 మీ పొలం నేల కోత ప్రమాదం అంచనా వేయండి</span>
+          </a>
+          <a href="#field-guide" class="btn btn-secondary">
+            <span class="en-only">🛡️ View Technical Field Guide</span>
+            <span class="te-only">🛡️ సాంకేతిక క్షేత్ర గైడ్ చూడండి</span>
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <div class="hero-stat-value">50+</div>
+            <div class="hero-stat-label">
+              <span class="en-only">Farmer Consultations</span>
+              <span class="te-only">రైతుల ముఖాముఖి</span>
+            </div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-value">
+              <span class="en-only">6 Weeks</span>
+              <span class="te-only">6 వారాలు</span>
+            </div>
+            <div class="hero-stat-label">
+              <span class="en-only">Field Study Period</span>
+              <span class="te-only">క్షేత్ర అధ్యయన కాలం</span>
+            </div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-value">
+              <span class="en-only">6 Modules</span>
+              <span class="te-only">6 మాడ్యూల్స్</span>
+            </div>
+            <div class="hero-stat-label">
+              <span class="en-only">Practical Action Guides</span>
+              <span class="te-only">ఆచరణాత్మక గైడ్లు</span>
+            </div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-value">100%</div>
+            <div class="hero-stat-label">
+              <span class="en-only">Bilingual & Free</span>
+              <span class="te-only">పూర్తి ఉచిత రైతు వేదిక</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-illustration">
+          <div class="hero-circle"></div>
+          <div class="hero-circle"></div>
+          <div class="hero-circle"></div>
+          <div class="hero-emoji-center">🌾</div>
+          <div class="hero-float-icon" title="Water Conservation">💧</div>
+          <div class="hero-float-icon" title="Nutrient Rich Soil">🪴</div>
+          <div class="hero-float-icon" title="Green Cover Crops">🌿</div>
+          <div class="hero-float-icon" title="Sun & Photosynthesis">☀️</div>
+          <div class="hero-float-icon" title="Organic Compost">🐛</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">↓</div>
+  </header>
+
+  <!-- Section 1: About Soil Erosion -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="section-label">
+          <span class="en-only">UNDERSTANDING THE CHALLENGE</span>
+          <span class="te-only">సమస్యను అర్థం చేసుకుందాం</span>
+        </div>
+        <h2 class="section-title">
+          <span class="en-only">What is Soil Erosion?</span>
+          <span class="te-only">మృత్తికా క్రమక్షయం అంటే ఏమిటి?</span>
+        </h2>
+        <p class="section-subtitle">
+          <span class="en-only">Soil erosion is the continuous wearing away and displacement of topsoil—the
+            nutrient-dense layer of Earth that sustains crop roots and yields.</span>
+          <span class="te-only">మట్టి పైపొరలోని అత్యంత సారవంతమైన భాగం గాలి, నీరు లేదా అస్తవ్యస్త వ్యవసాయ పద్ధతుల వల్ల
+            కొట్టుకుపోవడాన్ని నేల కోత అంటారు.</span>
+        </p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-visual">
+          <!-- Educational Soil Profile Card (No personal photos) -->
+          <div class="soil-profile-card">
+            <div class="soil-profile-header">
+              <span style="font-weight: 700; font-size: 1.1rem;">
+                <span class="en-only">🌱 Living Soil Profile Architecture</span>
+                <span class="te-only">🌱 సజీవ నేల పొరల నిర్మాణం</span>
+              </span>
+              <span
+                style="background: var(--clr-green-500); color: #fff; font-size: 0.75rem; font-weight: 700; padding: 0.2rem 0.6rem; border-radius: 999px;">
+                0 - 100 cm
+              </span>
+            </div>
+
+            <div class="soil-layers-stack">
+              <div class="layer-bar layer-o">
+                <div>
+                  <strong style="display: block; font-size: 0.95rem;">
+                    <span class="en-only">O-Horizon: Organic Humus (0 - 5 cm)</span>
+                    <span class="te-only">O-పొర: సేంద్రీయ హ్యూమస్ (0 - 5 సెం.మీ)</span>
+                  </strong>
+                  <span style="font-size: 0.82rem; opacity: 0.95;">
+                    <span class="en-only">Crop stubble, earthworms, decomposing organic matter</span>
+                    <span class="te-only">పంట వ్యర్థాలు, వానపాములు, కుళ్ళిన ఆకులు</span>
+                  </span>
+                </div>
+                <span style="font-weight: 700; font-size: 0.85rem; color: #7ee8a2;">
+                  <span class="en-only">Top Layer</span>
+                  <span class="te-only">పైపొర</span>
+                </span>
+              </div>
+
+              <div class="layer-bar layer-a">
+                <div>
+                  <strong style="display: block; font-size: 0.95rem;">
+                    <span class="en-only">A-Horizon: Fertile Topsoil (5 - 20 cm)</span>
+                    <span class="te-only">A-పొర: సారవంతమైన పైపొర (5 - 20 సెం.మీ)</span>
+                  </strong>
+                  <span style="font-size: 0.82rem; opacity: 0.95;">
+                    <span class="en-only">Active crop root zone, N-P-K nutrient reservoir</span>
+                    <span class="te-only">వేర్ల వ్యవస్థ, నత్రజని, భాస్వరం (కోతకు గురయ్యే భాగం)</span>
+                  </span>
+                </div>
+                <span style="font-weight: 700; font-size: 0.85rem; color: #fbbf24;">
+                  <span class="en-only">Vital Zone</span>
+                  <span class="te-only">కీలక భాగం</span>
+                </span>
+              </div>
+
+              <div class="layer-bar layer-b">
+                <div>
+                  <strong style="display: block; font-size: 0.95rem;">
+                    <span class="en-only">B-Horizon: Subsoil (20 - 50 cm)</span>
+                    <span class="te-only">B-పొర: ఉప నేల (20 - 50 సెం.మీ)</span>
+                  </strong>
+                  <span style="font-size: 0.82rem; opacity: 0.95;">
+                    <span class="en-only">Clay accumulation, deep moisture storage</span>
+                    <span class="te-only">ఖనిజాలు, బంకమట్టి నిల్వలు</span>
+                  </span>
+                </div>
+                <span style="font-size: 0.82rem; opacity: 0.8;">
+                  <span class="en-only">Mineral</span>
+                  <span class="te-only">ఖనిజాలు</span>
+                </span>
+              </div>
+
+              <div class="layer-bar layer-c">
+                <div>
+                  <strong style="display: block; font-size: 0.95rem;">
+                    <span class="en-only">C-Horizon: Parent Bedrock (> 50 cm)</span>
+                    <span class="te-only">C-పొర: రాతి పొర (> 50 సెం.మీ)</span>
+                  </strong>
+                  <span style="font-size: 0.82rem; opacity: 0.95;">
+                    <span class="en-only">Weathered bedrock foundation</span>
+                    <span class="te-only">శిలలు, భూగర్భ పునాది</span>
+                  </span>
+                </div>
+                <span style="font-size: 0.82rem; opacity: 0.8;">
+                  <span class="en-only">Bedrock</span>
+                  <span class="te-only">రాతిపొర</span>
+                </span>
+              </div>
+            </div>
+
+            <div
+              style="background: rgba(0,0,0,0.35); border-radius: 8px; padding: 0.85rem 1rem; font-size: 0.88rem; color: var(--clr-soil-200); line-height: 1.45;">
+              <span class="en-only">⚠️ <strong>Critical Fact:</strong> Nature takes 500 years to create 1 inch of
+                topsoil, but a single unprotected monsoon storm can wash it away entirely!</span>
+              <span class="te-only">⚠️ <strong>నిజం:</strong> 1 అంగుళం మట్టి ఏర్పడటానికి ప్రకృతికి 500 ఏళ్లు పడుతుంది,
+                కానీ గట్లు లేకపోతే ఒక్క భారీ వర్షానికే కొట్టుకుపోతుంది!</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-content">
+          <div class="erosion-types-list">
+            <div class="erosion-type-item">
+              <div class="erosion-type-icon water">🌊</div>
+              <div>
+                <h3 class="erosion-type-title">
+                  <span class="en-only">1. Water Erosion</span>
+                  <span class="te-only">1. వర్షపు నీటి వల్ల నేల కోత</span>
+                </h3>
+                <p class="erosion-type-desc">
+                  <span class="en-only">Prevalent in Chandragudem during southwest monsoon downpours. Raindrops dislodge
+                    soil particles causing sheet erosion, rills, and deep gullies along natural slopes.</span>
+                  <span class="te-only">చంద్రగూడెం పరిసరాల్లో భారీ వర్షాలు పడినప్పుడు వాలు ప్రాంతాల్లో నీరు వేగంగా
+                    ప్రవహించి పైపొర మట్టిని కాలువలుగా మార్చి కొట్టుకుపోయేలా చేస్తుంది.</span>
+                </p>
+              </div>
+            </div>
+
+            <div class="erosion-type-item">
+              <div class="erosion-type-icon wind">💨</div>
+              <div>
+                <h3 class="erosion-type-title">
+                  <span class="en-only">2. Wind Erosion</span>
+                  <span class="te-only">2. తీవ్రమైన గాలి వల్ల నేల కోత</span>
+                </h3>
+                <p class="erosion-type-desc">
+                  <span class="en-only">Occurs in dry summer months on open, un-mulched fields where dry, fine organic
+                    loam particles are swept away by high-velocity wind currents.</span>
+                  <span class="te-only">ఎండకాలంలో పంట లేని ఖాళీ పొలాల్లో ఎండిన సారవంతమైన మట్టి పొడి గాలి తీవ్రతకు
+                    ఎగిరిపోతుంది.</span>
+                </p>
+              </div>
+            </div>
+
+            <div class="erosion-type-item">
+              <div class="erosion-type-icon tillage">🚜</div>
+              <div>
+                <h3 class="erosion-type-title">
+                  <span class="en-only">3. Tillage Erosion</span>
+                  <span class="te-only">3. విచక్షణా రహిత దుక్కుల వల్ల కోత</span>
+                </h3>
+                <p class="erosion-type-desc">
+                  <span class="en-only">Mechanical movement of soil down-slope caused by intensive tractor plowing along
+                    slope lines rather than across contour lines, disrupting soil aggregates.</span>
+                  <span class="te-only">ట్రాక్టర్లతో వాలు దిశలోనే పదేపదే లోతు దుక్కులు చేయడం వల్ల మట్టి కణాలు
+                    విచ్ఛిన్నమై పల్చబడి దిగువకు జారిపోతాయి.</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2: Root Causes in Chandragudem & AP -->
+  <section class="causes" id="causes">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="section-label">
+          <span class="en-only">LOCAL REALITY & FIELD OBSERVATIONS</span>
+          <span class="te-only">క్షేత్రస్థాయి కారణాలు - చంద్రగూడెం పరిశీలన</span>
+        </div>
+        <h2 class="section-title">
+          <span class="en-only">Why is Soil Eroding in Chandragudem?</span>
+          <span class="te-only">చంద్రగూడెంలో నేల కోతకు ముఖ్య కారణాలు ఏమిటి?</span>
+        </h2>
+        <p class="section-subtitle">
+          <span class="en-only">Based on our 6-week survey with local farmers and physical inspection across 19 village
+            sites.</span>
+          <span class="te-only">మా 6 వారాల క్షేత్ర అధ్యయనం మరియు గ్రామంలోని స్థానిక రైతుల అనుభవాల ఆధారంగా గుర్తించిన
+            సమస్యలు.</span>
+        </p>
+      </div>
+
+      <div class="causes-grid">
+        <div class="cause-card">
+          <div class="cause-icon">🌧️</div>
+          <h3 class="cause-title">
+            <span class="en-only">Intense Monsoon Runoff</span>
+            <span class="te-only">తీవ్రమైన వర్షపు ప్రవాహం</span>
+          </h3>
+          <p class="cause-desc">
+            <span class="en-only">Sudden high-intensity rainfall events without adequate field bunds lead to surface
+              runoff carrying away precious topsoil into drains.</span>
+            <span class="te-only">గట్లు సరిగ్గా లేకపోవడం వల్ల ఏకధాటిగా కురిసే వర్షపు నీరు పొలంలోని సారవంతమైన మట్టిని
+              వాగుల్లోకి మోసుకెళ్తుంది.</span>
+          </p>
+        </div>
+
+        <div class="cause-card">
+          <div class="cause-icon">🧪</div>
+          <h3 class="cause-title">
+            <span class="en-only">Excessive Chemical Fertilizers</span>
+            <span class="te-only">రసాయన ఎరువుల మితిమీరిన వినియోగం</span>
+          </h3>
+          <p class="cause-desc">
+            <span class="en-only">Over-reliance on DAP and Urea without adding organic FYM or compost reduces earthworms
+              and organic carbon, destroying soil crumb structure.</span>
+            <span class="te-only">యూరియా, డీఏపీ వంటి ఎరువులు ఎక్కువగా వాడటం, పశువుల ఎరువు వేయకపోవడం వల్ల మట్టి
+              బిరుసెక్కి జీవశక్తి కోల్పోతోంది.</span>
+          </p>
+        </div>
+
+        <div class="cause-card">
+          <div class="cause-icon">⛰️</div>
+          <h3 class="cause-title">
+            <span class="en-only">Plowing Along Slopes</span>
+            <span class="te-only">వాలు వెంట దుక్కి దున్నడం</span>
+          </h3>
+          <p class="cause-desc">
+            <span class="en-only">Many plots near undulating terrains are plowed vertically along slopes rather than
+              along contours, creating artificial channels for fast water erosion.</span>
+            <span class="te-only">వాలుకు అడ్డంగా కాకుండా నిలువుగా దున్నడం వలన నీరు వేగంగా ప్రవహించేందుకు కాలువలు ఏర్పడి
+              మట్టి కొట్టుకుపోతుంది.</span>
+          </p>
+        </div>
+
+        <div class="cause-card">
+          <div class="cause-icon">🍂</div>
+          <h3 class="cause-title">
+            <span class="en-only">Burning of Crop Residues</span>
+            <span class="te-only">పంట వ్యర్థాలను తగులబెట్టడం</span>
+          </h3>
+          <p class="cause-desc">
+            <span class="en-only">Burning stubble instead of mulching leaves farmland completely bare and exposed to
+              direct sun baking, heavy winds, and sudden torrential rains.</span>
+            <span class="te-only">పంట కోసిన తర్వాత వ్యర్థాలను పొలంలోనే కాల్చివేయడం వల్ల నేలలోని సూక్ష్మజీవులు నశించి నేల
+              ఎండిపోయి కోతకు గురవుతుంది.</span>
+          </p>
+        </div>
+
+        <div class="cause-card">
+          <div class="cause-icon">🚫</div>
+          <h3 class="cause-title">
+            <span class="en-only">Absence of Cover Crops</span>
+            <span class="te-only">పచ్చిరొట్ట పైర్లు సాగు చేయకపోవడం</span>
+          </h3>
+          <p class="cause-desc">
+            <span class="en-only">Leaving fields fallow during dry months without planting green manure (Daincha,
+              Sunhemp) deprives the soil of protective biological cover.</span>
+            <span class="te-only">పంటల మధ్య విరామంలో జనుము, పిల్లిపెసర, జీలుగ వంటి పచ్చిరొట్ట పైర్లు వేయకపోవడం వల్ల నేల
+              రక్షణ కోల్పోతుంది.</span>
+          </p>
+        </div>
+
+        <div class="cause-card">
+          <div class="cause-icon">🪓</div>
+          <h3 class="cause-title">
+            <span class="en-only">Removal of Field Boundary Trees</span>
+            <span class="te-only">గట్లపై చెట్లను తొలగించడం</span>
+          </h3>
+          <p class="cause-desc">
+            <span class="en-only">Cutting down traditional neem, babool, and subabul trees along field boundaries
+              removes deep root anchors that historically stabilized bunds.</span>
+            <span class="te-only">పొలం గట్లపై ఉండే వేప, సుబాబుల్ వంటి చెట్లను తొలగించడం వల్ల గట్ల పట్టుత్వం తగ్గి
+              వర్షాలకు గట్లు తెగిపోతున్నాయి.</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: Severe Effects -->
+  <section class="effects" id="effects">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="section-label">
+          <span class="en-only">IMPACT ASSESSMENT</span>
+          <span class="te-only">దుష్ప్రభావాలు మరియు ఆర్థిక నష్టం</span>
+        </div>
+        <h2 class="section-title">
+          <span class="en-only">Consequences of Soil Degradation</span>
+          <span class="te-only">రైతులపై మరియు పంట దిగుబడిపై చూపే ప్రభావం</span>
+        </h2>
+        <p class="section-subtitle">
+          <span class="en-only">Unchecked soil erosion silently cripples farm economics year after year.</span>
+          <span class="te-only">నేల కోతను అరికట్టకపోతే రైతన్నలకు ఏటా దిగుబడులు తగ్గి పెట్టుబడి ఖర్చులు
+            పెరుగుతాయి.</span>
+        </p>
+      </div>
+
+      <div class="effects-grid">
+        <div class="effect-card">
+          <div class="effect-emoji">📉</div>
+          <h3 class="effect-title">
+            <span class="en-only">30-40% Yield Reduction</span>
+            <span class="te-only">30-40% పంట దిగుబడి క్షీణత</span>
+          </h3>
+          <p class="effect-desc">
+            <span class="en-only">Loss of topsoil directly removes nitrogen, phosphorus, and organic matter, causing
+              stunted crop growth and reduced grain/fruit weight.</span>
+            <span class="te-only">సారవంతమైన పైపొర నశించడంతో మొక్కలకు పోషకాలు అందక ఏపుగా పెరగవు, దిగుబడి భారీగా
+              తగ్గుతుంది.</span>
+          </p>
+        </div>
+
+        <div class="effect-card">
+          <div class="effect-emoji">💸</div>
+          <h3 class="effect-title">
+            <span class="en-only">Escalating Fertilizer Costs</span>
+            <span class="te-only">పెరుగుతున్న పెట్టుబడి ఖర్చులు</span>
+          </h3>
+          <p class="effect-desc">
+            <span class="en-only">Farmers are forced to purchase more synthetic fertilizers each season just to match
+              baseline historical production figures.</span>
+            <span class="te-only">కోల్పోయిన సారాన్ని భర్తీ చేయడానికి రైతులు ఎక్కువ రసాయన ఎరువులు కొనాల్సి వచ్చి అప్పుల
+              పాలవుతున్నారు.</span>
+          </p>
+        </div>
+
+        <div class="effect-card">
+          <div class="effect-emoji">🏜️</div>
+          <h3 class="effect-title">
+            <span class="en-only">Groundwater Depletion</span>
+            <span class="te-only">భూగర్భ జలాలు ఇంకకపోవడం</span>
+          </h3>
+          <p class="effect-desc">
+            <span class="en-only">Hardened, eroded soil cannot absorb rainwater; runoff drains away quickly instead of
+              recharging local borewells and village aquifers.</span>
+            <span class="te-only">గట్టిపడిన నేల వర్షపు నీటిని పీల్చుకోలేకపోవడంతో బోరు బావులలో నీటి మట్టం వేగంగా
+              పడిపోతోంది.</span>
+          </p>
+        </div>
+
+        <div class="effect-card">
+          <div class="effect-emoji">🌊</div>
+          <h3 class="effect-title">
+            <span class="en-only">Siltation of Tanks & Canals</span>
+            <span class="te-only">చెరువులు మరియు కాలువల పూడిక</span>
+          </h3>
+          <p class="effect-desc">
+            <span class="en-only">Eroded mud collects in local irrigation tanks and check-dams, reducing water storage
+              capacity and increasing localized flooding risks.</span>
+            <span class="te-only">కొట్టుకొచ్చిన మట్టి చెరువుల్లో మేట వేయడంతో చెరువుల నీటి నిల్వ సామర్థ్యం
+              క్షీణిస్తోంది.</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4: Prevention Methods -->
+  <section class="prevention" id="prevention">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="section-label">
+          <span class="en-only">PROVEN PRACTICAL SOLUTIONS</span>
+          <span class="te-only">ఆచరణాత్మక నివారణ పద్ధతులు</span>
+        </div>
+        <h2 class="section-title">
+          <span class="en-only">Effective Soil Management Techniques</span>
+          <span class="te-only">నేల సంరక్షణకు సమర్థవంతమైన మార్గాలు</span>
+        </h2>
+        <p class="section-subtitle">
+          <span class="en-only">Low-cost, high-impact practices that farmers of Chandragudem can readily
+            implement.</span>
+          <span class="te-only">చంద్రగూడెం రైతులు సులభంగా తక్కువ ఖర్చుతో అమలు చేయగల శాస్త్రీయ పద్ధతులు.</span>
+        </p>
+      </div>
+
+      <div class="prevention-grid">
+        <div class="prevention-card">
+          <div class="prevention-number">01</div>
+          <h3 class="prevention-title">
+            <span class="en-only">Contour Bunding & Trenching</span>
+            <span class="te-only">వాలుకు అడ్డంగా గట్లు మరియు కందకాలు</span>
+          </h3>
+          <p class="prevention-desc">
+            <span class="en-only">Construct earth bunds across field slope contours. Slows down water runoff, traps silt
+              on-site, and forces rainwater to infiltrate deep into the soil profile.</span>
+            <span class="te-only">పొలం వాలుకు సమాంతరంగా గట్లు, ఇంకుడు కందకాలు నిర్మించడం వలన వర్షపు నీటి వేగం తగ్గి,
+              నీరు భూమిలోకి ఇంకి మట్టి కొట్టుకుపోదు.</span>
+          </p>
+        </div>
+
+        <div class="prevention-card">
+          <div class="prevention-number">02</div>
+          <h3 class="prevention-title">
+            <span class="en-only">Green Manure & Cover Crops</span>
+            <span class="te-only">పచ్చిరొట్ట ఎరువుల సాగు (జీలుగ, జనుము)</span>
+          </h3>
+          <p class="prevention-desc">
+            <span class="en-only">Grow Sunhemp, Daincha, or Pillipesara before the main crop. Incorporate at flowering
+              to add 15-20 tonnes of organic biomass and fix atmospheric nitrogen.</span>
+            <span class="te-only">ప్రధాన పంటకు ముందు జనుము లేదా జీలుగ వేసి పూత దశలో కలియదున్నడం వల్ల ఎకరాకు 15-20 టన్నుల
+              సేంద్రీయ పదార్థం లభిస్తుంది.</span>
+          </p>
+        </div>
+
+        <div class="prevention-card">
+          <div class="prevention-number">03</div>
+          <h3 class="prevention-title">
+            <span class="en-only">Mulching with Crop Residues</span>
+            <span class="te-only">పంట వ్యర్థాలతో మల్చింగ్ (ఆచ్ఛాదన)</span>
+          </h3>
+          <p class="prevention-desc">
+            <span class="en-only">Cover open soil between crop rows with dry straw, stalks, or leaves. Conserves soil
+              moisture, suppresses weeds, prevents crusting, and decomposes into humus.</span>
+            <span class="te-only">వరి పొట్టు లేదా పంట మిగులుతో నేలపై కప్పడం వల్ల తేమ ఆవిరి కాకుండా కాపాడుతుంది, కలుపు
+              నివారిస్తుంది.</span>
+          </p>
+        </div>
+
+        <div class="prevention-card">
+          <div class="prevention-number">04</div>
+          <h3 class="prevention-title">
+            <span class="en-only">Agroforestry & Windbreaks</span>
+            <span class="te-only">వ్యవసాయ అటవీకరణ మరియు గాలి అడ్డంకులు</span>
+          </h3>
+          <p class="prevention-desc">
+            <span class="en-only">Plant rows of Subabul, Teak, Drumstick, and Neem on farm boundaries. Acts as a
+              windbreak, provides timber/fodder, and binds field edges with deep root systems.</span>
+            <span class="te-only">గట్ల చుట్టూ మునగ, వేప, సుబాబుల్ చెట్లను నాటడం వల్ల బలమైన గాలుల నుండి పంటను కాపాడవచ్చు
+              మరియు గట్లు పటిష్టమవుతాయి.</span>
+          </p>
+        </div>
+
+        <div class="prevention-card">
+          <div class="prevention-number">05</div>
+          <h3 class="prevention-title">
+            <span class="en-only">Conservation & Zero Tillage</span>
+            <span class="te-only">కనిష్ట సేద్యం (జీరో టిల్లేజ్)</span>
+          </h3>
+          <p class="prevention-desc">
+            <span class="en-only">Avoid excessive plowing. Sow seeds directly through stubble using seed-cum-fertilizer
+              drills to preserve natural soil architecture, fungal mycorrhizae, and earthworm tunnels.</span>
+            <span class="te-only">పదేపదే నేలను తిరగవేయకుండా తక్కువ దుక్కులతో విత్తుకోవడం ద్వారా నేలలోని సహజ వానపాములు
+              మరియు తేమను కాపాడవచ్చు.</span>
+          </p>
+        </div>
+
+        <div class="prevention-card">
+          <div class="prevention-number">06</div>
+          <h3 class="prevention-title">
+            <span class="en-only">Intercropping & Crop Rotation</span>
+            <span class="te-only">పంట మార్పిడి మరియు అంతర పంటలు</span>
+          </h3>
+          <p class="prevention-desc">
+            <span class="en-only">Rotate cereals with legumes (Redgram, Greengram, Blackgram). Dense legume canopies
+              shield the ground from raindrop impact while replenishing soil nitrogen naturally.</span>
+            <span class="te-only">పత్తి, మిరప లేదా మొక్కజొన్నలో కంది, పెసర, మినుము వంటి పప్పుధాన్యాలను అంతర పంటలుగా
+              వేయడం వల్ల నేల సారవంతం అవుతుంది.</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 5: Soil Health Tips & Testing Guide -->
+  <section class="soil-health" id="soil-health">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="section-label">
+          <span class="en-only">DIAGNOSIS & MANAGEMENT</span>
+          <span class="te-only">మట్టి పరీక్ష మరియు నేల ఆరోగ్యం</span>
+        </div>
+        <h2 class="section-title">
+          <span class="en-only">Step-by-Step Guide to Soil Testing</span>
+          <span class="te-only">మట్టి నమూనా ఎలా సేకరించాలి?</span>
+        </h2>
+        <p class="section-subtitle">
+          <span class="en-only">A Soil Health Card tells you exact fertilizer doses needed, saving thousands of rupees
+            per acre.</span>
+          <span class="te-only">మట్టి పరీక్ష చేయించడం వల్ల ఏ ఎరువులు ఎంత మోతాదులో అవసరమో తెలుస్తుంది, తద్వారా వేల రూపాయల
+            ఆదా అవుతుంది.</span>
+        </p>
+      </div>
+
+      <div class="tips-grid">
+        <div class="tip-card">
+          <div class="tip-icon">📐</div>
+          <h3 class="tip-title">
+            <span class="en-only">1. Zigzag Sampling Pattern</span>
+            <span class="te-only">1. జిగ్‌జాగ్‌ పద్ధతిలో నమూనా</span>
+          </h3>
+          <p class="tip-desc">
+            <span class="en-only">Walk in a zigzag across your 1-2 acre field. Select 8-10 random spots. Avoid field
+              boundaries, shade of trees, old compost pits, and irrigation channels.</span>
+            <span class="te-only">పొలంలో 8-10 చోట్ల జిగ్‌జాగ్‌ పద్ధతిలో స్థలాలను ఎంచుకోవాలి. గట్ల దగ్గర, చెట్ల నీడలో,
+              ఎరువు గుంతల వద్ద మట్టి తీయరాదు.</span>
+          </p>
+        </div>
+
+        <div class="tip-card">
+          <div class="tip-icon">⛏️</div>
+          <h3 class="tip-title">
+            <span class="en-only">2. 'V' Shape Cut to 15 cm</span>
+            <span class="te-only">2. 15 సెం.మీ లోతులో 'V' ఆకారం</span>
+          </h3>
+          <p class="tip-desc">
+            <span class="en-only">Clear weeds from the surface. Dig a V-shaped pit 15 cm deep (root zone). Slice a 2 cm
+              uniform soil slice from the side of the trench from top to bottom.</span>
+            <span class="te-only">పైభాగంలోని చెత్తను తొలగించి, పారతో 15 సెం.మీ లోతు 'V' ఆకారపు గుంత తీసి, పైనుంచి
+              కిందవరకు ఒక అంగుళం మందాన మట్టి చెక్కను తీయాలి.</span>
+          </p>
+        </div>
+
+        <div class="tip-card">
+          <div class="tip-icon">🥣</div>
+          <h3 class="tip-title">
+            <span class="en-only">3. Quartering & Drying</span>
+            <span class="te-only">3. కలపడం మరియు నీడలో ఆరబెట్టడం</span>
+          </h3>
+          <p class="tip-desc">
+            <span class="en-only">Mix all samples thoroughly in a clean plastic bucket. Divide into 4 quarters, discard
+              opposite quarters until 500g remains. Dry in shade, never under direct sun.</span>
+            <span class="te-only">సేకరించిన మట్టిని శుభ్రమైన ప్లాస్టిక్ సంచిలో బాగా కలపాలి. నాలుగు భాగాలుగా చేసి
+              ఎదురెదురు భాగాలు తీసేస్తూ చివరకు అర కిలో మట్టి మాత్రమే ఉంచి నీడలో ఆరబెట్టాలి.</span>
+          </p>
+        </div>
+
+        <div class="tip-card">
+          <div class="tip-icon">🏷️</div>
+          <h3 class="tip-title">
+            <span class="en-only">4. Submit at Local RBK</span>
+            <span class="te-only">4. రైతు భరోసా కేంద్రంలో అందజేత</span>
+          </h3>
+          <p class="tip-desc">
+            <span class="en-only">Pack in a clean cloth or plastic bag with Farmer Name, Survey Number, Aadhaar, and
+              Mobile. Submit to Chandragudem RBK Village Agriculture Assistant (VAA).</span>
+            <span class="te-only">రైతు పేరు, సర్వే నంబర్, ఆధార్ నంబర్ రాసి చంద్రగూడెం రైతు భరోసా కేంద్రం (RBK) లోని
+              వ్యవసాయ సహాయకునికి అందజేయండి.</span>
+          </p>
+        </div>
+
+        <div class="tip-card">
+          <div class="tip-icon">🧪</div>
+          <h3 class="tip-title">
+            <span class="en-only">5. Understand Your Card</span>
+            <span class="te-only">5. సాయిల్ హెల్త్ కార్డు విశ్లేషణ</span>
+          </h3>
+          <p class="tip-desc">
+            <span class="en-only">Check Soil pH (ideal 6.5 - 7.5), Organic Carbon (aim > 0.75%), Available Nitrogen,
+              Phosphorus, Potassium, Zinc, and Boron to target exact dosage.</span>
+            <span class="te-only">పి.హెచ్ (pH), సేంద్రీయ కర్బనం (0.75% కంటే ఎక్కువ ఉండాలి), నత్రజని, భాస్వరం, పొటాష్
+              విలువలను బట్టి సిఫార్సు చేసిన మోతాదులోనే ఎరువులు వాడాలి.</span>
+          </p>
+        </div>
+
+        <div class="tip-card">
+          <div class="tip-icon">🪱</div>
+          <h3 class="tip-title">
+            <span class="en-only">6. Natural Farming Inputs (APCNF)</span>
+            <span class="te-only">6. సహజ వ్యవసాయ ద్రావణాలు (జీవామృతం)</span>
+          </h3>
+          <p class="tip-desc">
+            <span class="en-only">Apply 200 Litres of Jeevamrutham per acre every 15 days through irrigation or spray.
+              Multiplies beneficial soil microbes and revives earthworm activity.</span>
+            <span class="te-only">ఎకరాకు 200 లీటర్ల ద్రవ జీవామృతాన్ని నెలకు రెండుసార్లు నీటితో పాటు ఇవ్వడం వల్ల నేలలో
+              వానపాములు, ఉపయోగకర సూక్ష్మజీవులు వేగంగా వృద్ధి చెందుతాయి.</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 6: Government Schemes (With Working & Verified Official Links) -->
+  <section class="schemes" id="schemes">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="section-label">
+          <span class="en-only">STATE & CENTRAL ASSISTANCE</span>
+          <span class="te-only">ప్రభుత్వ సహాయం & సంక్షేమ పథకాలు</span>
+        </div>
+        <h2 class="section-title">
+          <span class="en-only">Agricultural Support Schemes in Andhra Pradesh</span>
+          <span class="te-only">ఆంధ్రప్రదేశ్ రైతులకు లభించే ముఖ్య పథకాలు</span>
+        </h2>
+        <p class="section-subtitle">
+          <span class="en-only">Verified official portals and grassroots procedures to access bunding subsidies,
+            micro-irrigation, soil cards, and organic inputs.</span>
+          <span class="te-only">సబ్సిడీలు, సాంకేతిక తోడ్పాటు మరియు నేల యాజమాన్యం కోసం అధికారిక పోర్టల్స్ మరియు
+            గ్రామస్థాయి వివరాలు.</span>
+        </p>
+      </div>
+
+      <div class="schemes-grid">
+        <div class="scheme-card">
+          <div class="scheme-header">
+            <div class="scheme-icon">🏛️</div>
+            <h3 class="scheme-name">
+              <span class="en-only">Rythu Bharosa Kendras (RBKs)</span>
+              <span class="te-only">రైతు భరోసా కేంద్రాలు (RBKs)</span>
+            </h3>
+          </div>
+          <p class="scheme-desc">
+            <span class="en-only">Your village-level single window hub in Chandragudem Gram Panchayat for certified
+              seeds, subsidized fertilizers, digital soil health cards, and extension advice.</span>
+            <span class="te-only">చంద్రగూడెం గ్రామంలోనే విత్తనాలు, ఎరువులు, సాయిల్ హెల్త్ కార్డులు మరియు నిపుణుల సలహాలు
+              అందించే ఏకైక గ్రామ వేదిక.</span>
+          </p>
+          <a href="#contact" class="scheme-link">
+            <span class="en-only">Chandragudem RBK Info &rarr;</span>
+            <span class="te-only">గ్రామ RBK వివరాలు &rarr;</span>
+          </a>
+        </div>
+
+        <!-- AP Micro Irrigation Project (Working Link Verified) -->
+        <div class="scheme-card">
+          <div class="scheme-header">
+            <div class="scheme-icon">💧</div>
+            <h3 class="scheme-name">
+              <span class="en-only">AP Micro Irrigation Project (APMIP)</span>
+              <span class="te-only">ఏపీ సూక్ష్మ సేద్య ప్రాజెక్ట్ (బిందు సేద్యం)</span>
+            </h3>
+          </div>
+          <p class="scheme-desc">
+            <span class="en-only">Up to 90% subsidy for SC/ST, small and marginal farmers on Drip & Sprinkler systems
+              via AP Horticulture Department. Eliminates runoff erosion and saves 50% water.</span>
+            <span class="te-only">ఎస్సీ/ఎస్టీ, చిన్న, సన్నకారు రైతులకు డ్రిప్ మరియు స్ప్రింక్లర్ వ్యవస్థలపై 90% వరకు
+              రాయితీ. నీటి ఆదాతో పాటు నేల కోతను పూర్తిగా అరికడుతుంది.</span>
+          </p>
+          <div style="margin-top: 0.5rem; display: flex; flex-direction: column; gap: 0.35rem;">
+            <a href="https://horticulturedept.ap.gov.in/" target="_blank" rel="noopener noreferrer" class="scheme-link">
+              <span class="en-only">AP Horticulture Dept Portal &rarr;</span>
+              <span class="te-only">ఉద్యానవన శాఖ అధికారిక పోర్టల్ &rarr;</span>
+            </a>
+            <a href="https://pmksy.gov.in/" target="_blank" rel="noopener noreferrer" class="scheme-link"
+              style="color: var(--clr-water-500); font-size: 0.85rem;">
+              <span class="en-only">PMKSY Micro-Irrigation Portal &rarr;</span>
+              <span class="te-only">పీఎంకేఎస్‌వై కేంద్ర పోర్టల్ &rarr;</span>
+            </a>
+          </div>
+          <div style="font-size: 0.8rem; color: var(--clr-soil-400); margin-top: 0.5rem;">
+            <span class="en-only"><em>Required: Aadhaar, Pattadar Passbook, 1-B Adangal. Apply via Chandragudem
+                RBK.</em></span>
+            <span class="te-only"><em>అవసరమైన పత్రాలు: ఆధార్, పట్టాదారు పాస్ పుస్తకం, 1-బి అడంగల్. చంద్రగూడెం RBK ద్వారా
+                దరఖాస్తు చేయండి.</em></span>
+          </div>
+        </div>
+
+        <div class="scheme-card">
+          <div class="scheme-header">
+            <div class="scheme-icon">🌿</div>
+            <h3 class="scheme-name">
+              <span class="en-only">AP Community Natural Farming (APCNF)</span>
+              <span class="te-only">ఆంధ్రప్రదేశ్ ప్రకృతి వ్యవసాయం (APCNF)</span>
+            </h3>
+          </div>
+          <p class="scheme-desc">
+            <span class="en-only">Free training, seed-to-seed organic protocol, Pre-Monsoon Dry Sowing (PMDS) 365-day
+              green cover initiative implemented through Rythu Sadhikara Samstha (RySS).</span>
+            <span class="te-only">365 రోజులు పచ్చని పంటల ద్వారా నేల సంరక్షణ (PMDS), దేశీ ఆవు ఆధారిత ఎరువుల తయారీలో రైతు
+              సాధికార సంస్థ ద్వారా ఉచిత శిక్షణ.</span>
+          </p>
+          <a href="https://apcnf.in/" target="_blank" rel="noopener noreferrer" class="scheme-link">
+            <span class="en-only">Explore APCNF Official Portal &rarr;</span>
+            <span class="te-only">ప్రకృతి వ్యవసాయ అధికారిక వెబ్‌సైట్ &rarr;</span>
+          </a>
+        </div>
+
+        <div class="scheme-card">
+          <div class="scheme-header">
+            <div class="scheme-icon">📜</div>
+            <h3 class="scheme-name">
+              <span class="en-only">Soil Health Card Scheme</span>
+              <span class="te-only">సాయిల్ హెల్త్ కార్డ్ పథకం</span>
+            </h3>
+          </div>
+          <p class="scheme-desc">
+            <span class="en-only">Central government initiative offering free cycle-wise laboratory testing of 12
+              critical chemical and physical parameters with crop-specific fertilizer plans.</span>
+            <span class="te-only">కేంద్ర ప్రభుత్వ ఉచిత మట్టి పరీక్ష పథకం. 12 రకాల నేల పోషకాల వివరాలు మరియు పంటల వారీగా
+              అవసరమైన ఎరువుల సమగ్ర నివేదిక.</span>
+          </p>
+          <a href="https://soilhealth.dac.gov.in/" target="_blank" rel="noopener noreferrer" class="scheme-link">
+            <span class="en-only">Soil Health National Portal &rarr;</span>
+            <span class="te-only">మట్టి ఆరోగ్య జాతీయ పోర్టల్ &rarr;</span>
+          </a>
+        </div>
+
+        <div class="scheme-card">
+          <div class="scheme-header">
+            <div class="scheme-icon">🌾</div>
+            <h3 class="scheme-name">
+              <span class="en-only">Subsidized Green Manure Seeds</span>
+              <span class="te-only">రాయితీపై పచ్చిరొట్ట విత్తనాల పంపిణీ</span>
+            </h3>
+          </div>
+          <p class="scheme-desc">
+            <span class="en-only">State Agriculture Department provides Daincha and Sunhemp seeds at 50% to 75% subsidy
+              through village RBKs ahead of the Kharif season to enrich organic matter.</span>
+            <span class="te-only">ఖరీఫ్ సీజన్‌కు ముందు చంద్రగూడెం RBK ద్వారా జనుము, జీలుగ విత్తనాలను వ్యవసాయ శాఖ 50-75%
+              రాయితీతో రైతులకు అందజేస్తుంది.</span>
+          </p>
+          <a href="#contact" class="scheme-link">
+            <span class="en-only">Inquire at Chandragudem RBK &rarr;</span>
+            <span class="te-only">చంద్రగూడెం RBK లో సంప్రదించండి &rarr;</span>
+          </a>
+        </div>
+
+        <!-- Farm Mechanization / Yantra Seva (Working Link Verified) -->
+        <div class="scheme-card">
+          <div class="scheme-header">
+            <div class="scheme-icon">🚜</div>
+            <h3 class="scheme-name">
+              <span class="en-only">Farm Mechanization / Yantra Seva</span>
+              <span class="te-only">రైతు యంత్ర సేవ & యాంత్రీకరణ పథకం</span>
+            </h3>
+          </div>
+          <p class="scheme-desc">
+            <span class="en-only">Access tractor-mounted contour bund formers, laser land levelers, and sub-soilers
+              through Community Hiring Centres (CHCs) and AP Agros at affordable rental rates.</span>
+            <span class="te-only">పొలం కాంటూర్ గట్లు వేసే యంత్రాలు, లేజర్ లెవలర్లు మరియు ఆధునిక పనిముట్లను ఏపీ ఆగ్రోస్
+              మరియు కమ్యూనిటీ హైరింగ్ సెంటర్ల ద్వారా తక్కువ అద్దెకే పొందవచ్చు.</span>
+          </p>
+          <div style="margin-top: 0.5rem; display: flex; flex-direction: column; gap: 0.35rem;">
+            <a href="https://www.apagros.org/" target="_blank" rel="noopener noreferrer" class="scheme-link">
+              <span class="en-only">AP Agros Official Portal &rarr;</span>
+              <span class="te-only">ఏపీ ఆగ్రోస్ అధికారిక పోర్టల్ &rarr;</span>
+            </a>
+            <a href="https://agrimachinery.nic.in/" target="_blank" rel="noopener noreferrer" class="scheme-link"
+              style="color: var(--clr-water-500); font-size: 0.85rem;">
+              <span class="en-only">National Farm Machinery DBT Portal &rarr;</span>
+              <span class="te-only">జాతీయ వ్యవసాయ యాంత్రీకరణ పోర్టల్ &rarr;</span>
+            </a>
+          </div>
+          <div style="font-size: 0.8rem; color: var(--clr-soil-400); margin-top: 0.5rem;">
+            <span class="en-only"><em>Contact Mylavaram Mandal Agriculture Officer or RBK for tractor hiring
+                booking.</em></span>
+            <span class="te-only"><em>ట్రాక్టర్ లేదా పనిముట్ల అద్దె కోసం మైలవరం మండల వ్యవసాయ అధికారిని లేదా RBK ని
+                సంప్రదించండి.</em></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 7: Interactive Erosion Risk Calculator (Strict Single Language) -->
+  <section class="calculator" id="calculator">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="section-label">
+          <span class="en-only">INTERACTIVE DECISION TOOL</span>
+          <span class="te-only">ఇంటరాక్టివ్ పరికరం</span>
+        </div>
+        <h2 class="section-title">
+          <span class="en-only">Soil Erosion Risk Calculator</span>
+          <span class="te-only">మీ పొలం నేల కోత ప్రమాద అంచనా యంత్రం</span>
+        </h2>
+        <p class="section-subtitle">
+          <span class="en-only">Select your farm conditions to get an immediate vulnerability score and customized soil
+            conservation recommendations.</span>
+          <span class="te-only">మీ పొలం వివరాలను ఎంచుకుని, వెంటనే నేల కోత తీవ్రతను మరియు తగిన యాజమాన్య సూచనలను
+            తెలుసుకోండి.</span>
+        </p>
+      </div>
+
+      <div class="calc-wrapper">
+        <div class="calc-grid">
+          <div class="calc-form">
+            <!-- Soil Type -->
+            <div class="form-group">
+              <label class="form-label" for="calcSoil">
+                <span class="en-only">1. Soil Type in Your Field</span>
+                <span class="te-only">1. మీ పొలంలోని నేల రకం:</span>
+              </label>
+              <select class="form-select" id="calcSoil" onchange="calculateErosionRisk()">
+                <!-- Populated dynamically with clean single language -->
+              </select>
+            </div>
+
+            <!-- Slope -->
+            <div class="form-group">
+              <label class="form-label" for="calcSlope">
+                <span class="en-only">2. Land Slope & Terrain</span>
+                <span class="te-only">2. భూమి వాలు స్వభావం:</span>
+              </label>
+              <select class="form-select" id="calcSlope" onchange="calculateErosionRisk()">
+                <!-- Populated dynamically with clean single language -->
+              </select>
+            </div>
+
+            <!-- Bunding -->
+            <div class="form-group">
+              <label class="form-label" for="calcBunding">
+                <span class="en-only">3. Field Bunding Condition</span>
+                <span class="te-only">3. పొలం గట్ల పరిస్థితి:</span>
+              </label>
+              <select class="form-select" id="calcBunding" onchange="calculateErosionRisk()">
+                <!-- Populated dynamically with clean single language -->
+              </select>
+            </div>
+
+            <!-- Crop Cover -->
+            <div class="form-group">
+              <label class="form-label" for="calcCover">
+                <span class="en-only">4. Off-Season Crop Cover & Mulching</span>
+                <span class="te-only">4. ఎండకాలంలో పంట ఆచ్ఛాదన (మల్చింగ్):</span>
+              </label>
+              <select class="form-select" id="calcCover" onchange="calculateErosionRisk()">
+                <!-- Populated dynamically with clean single language -->
+              </select>
+            </div>
+
+            <!-- Organic Matter -->
+            <div class="form-group">
+              <label class="form-label" for="calcOrganic">
+                <span class="en-only">5. Organic Matter / FYM Application</span>
+                <span class="te-only">5. పశువుల ఎరువు / జీవామృతం వినియోగం:</span>
+              </label>
+              <select class="form-select" id="calcOrganic" onchange="calculateErosionRisk()">
+                <!-- Populated dynamically with clean single language -->
+              </select>
+            </div>
+          </div>
+
+          <!-- Dynamic Single-Language Prediction Box -->
+          <div class="calc-result-box">
+            <div
+              style="display: flex; justify-content: space-between; align-items: center; width: 100%; margin-bottom: 0.5rem;">
+              <span
+                style="font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; color: var(--clr-soil-500); font-weight: 700;">
+                <span class="en-only">ESTIMATED VULNERABILITY</span>
+                <span class="te-only">అంచనా వేసిన నేల కోత తీవ్రత</span>
+              </span>
+              <div style="display: flex; gap: 0.35rem;">
+                <button type="button" class="calc-lang-btn" id="calcLangTe" onclick="setLanguage('te')">తెలుగు</button>
+                <button type="button" class="calc-lang-btn active" id="calcLangEn"
+                  onclick="setLanguage('en')">English</button>
+              </div>
+            </div>
+
+            <div class="risk-meter">
+              <div class="risk-bar" id="calcRiskBar" style="width: 55%; background: #eab308;"></div>
+            </div>
+
+            <div class="risk-level-badge risk-moderate" id="calcRiskBadge">
+              <!-- Populated dynamically -->
+            </div>
+
+            <div id="calcRiskText" style="margin-bottom: 1.25rem;">
+              <!-- Populated dynamically in active language only -->
+            </div>
+
+            <div class="calc-recommendations" id="calcRecList">
+              <!-- Populated dynamically in active language only -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 8: Technical Field Guide & Conservation Engineering (100% Bilingual Translation) -->
+  <section class="field-guide" id="field-guide">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="section-label">
+          <span class="en-only">PRACTICAL FIELD HANDBOOK</span>
+          <span class="te-only">క్షేత్ర స్థాయి సాంకేతిక మార్గదర్శిని</span>
+        </div>
+        <h2 class="section-title" style="color:#fff;">
+          <span class="en-only">Technical Soil Conservation Engineering</span>
+          <span class="te-only">సమగ్ర నేల సంరక్షణ పద్ధతులు & ఇంజనీరింగ్ గైడ్</span>
+        </h2>
+        <p class="section-subtitle" style="color: var(--clr-soil-200);">
+          <span class="en-only">Scientific blueprints, technical bunding specifications, and a seasonal farming roadmap
+            designed specifically for Chandragudem & Andhra Pradesh agrarian conditions.</span>
+          <span class="te-only">చంద్రగూడెం మరియు ఆంధ్రప్రదేశ్ నేలల కోసం శాస్త్రీయంగా రూపొందించిన గట్ల కొలతలు, పచ్చిరొట్ట
+            నిష్పత్తులు మరియు సీజనల్ వ్యవసాయ క్యాలెండర్.</span>
+        </p>
+      </div>
+
+      <!-- 6 Technical Blueprint Cards with 100% Telugu & English elements -->
+      <div class="guide-grid">
+        <!-- Card 1 -->
+        <div class="guide-card">
+          <div class="guide-header">
+            <div class="guide-icon">📐</div>
+            <div>
+              <h3 class="guide-title">
+                <span class="en-only">Contour Bunding Engineering</span>
+                <span class="te-only">కాంటూర్ గట్ల సాంకేతిక నిర్మాణం</span>
+              </h3>
+              <span class="guide-badge">
+                <span class="en-only">Structural Barrier</span>
+                <span class="te-only">నిర్మాణాత్మక రక్షణ</span>
+              </span>
+            </div>
+          </div>
+          <p class="guide-desc">
+            <span class="en-only">Earthen barriers constructed across the land slope along contour lines. Slows down
+              overland runoff velocity and forces rainwater to recharge into the root zone.</span>
+            <span class="te-only">వాలుకు సమాంతరంగా నిర్మించే ఎత్తైన గట్లు. ఇవి వర్షపు నీటి వేగాన్ని అడ్డుకుని నీటిని
+              భూమిలోకి ఇంకింపజేస్తాయి మరియు మట్టిని పొలంలోనే ఆపుతాయి.</span>
+          </p>
+          <div class="guide-specs">
+            <div class="spec-item">
+              <span class="spec-lbl">
+                <span class="en-only">Optimal Bund Height</span>
+                <span class="te-only">సరైన గట్టు ఎత్తు</span>
+              </span>
+              <span class="spec-val">
+                <span class="en-only">45 - 60 cm (1.5 - 2 Feet)</span>
+                <span class="te-only">45 - 60 సెం.మీ (1.5 - 2 అడుగులు)</span>
+              </span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-lbl">
+                <span class="en-only">Base Width</span>
+                <span class="te-only">పునాది వెడల్పు</span>
+              </span>
+              <span class="spec-val">
+                <span class="en-only">1.2 - 1.5 Meters</span>
+                <span class="te-only">1.2 - 1.5 మీటర్లు</span>
+              </span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-lbl">
+                <span class="en-only">Runoff Reduction</span>
+                <span class="te-only">నీటి వేగం తగ్గింపు</span>
+              </span>
+              <span class="spec-val">
+                <span class="en-only">75% Velocity Cut</span>
+                <span class="te-only">75% వేగం తగ్గుతుంది</span>
+              </span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-lbl">
+                <span class="en-only">Sediment Retention</span>
+                <span class="te-only">మట్టి నిలుపుదల</span>
+              </span>
+              <span class="spec-val">
+                <span class="en-only">85% Silt Trapped</span>
+                <span class="te-only">85% మట్టి నిలుస్తుంది</span>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="guide-card">
+          <div class="guide-header">
+            <div class="guide-icon">🌿</div>
+            <div>
+              <h3 class="guide-title">
+                <span class="en-only">Pre-Monsoon Green Manuring</span>
+                <span class="te-only">ఖరీఫ్ పూర్వ పచ్చిరొట్ట సాగు విధానం</span>
+              </h3>
+              <span class="guide-badge">
+                <span class="en-only">Biological Shield</span>
+                <span class="te-only">జీవ రక్షణ కవచం</span>
+              </span>
+            </div>
+          </div>
+          <p class="guide-desc">
+            <span class="en-only">Sowing fast-growing leguminous crops under Pre-Monsoon Dry Sowing (PMDS). Dense
+              vegetative canopy breaks the kinetic impact of heavy raindrops on bare soil.</span>
+            <span class="te-only">ఖరీఫ్‌కు ముందు జనుము, జీలుగ వంటి పచ్చిరొట్ట పైర్లను సాగు చేయడం. వీటి దట్టమైన ఆకులు
+              భారీ వర్షపు చినుకుల దెబ్బ నుంచి నేల పైపొరను రక్షిస్తాయి.</span>
+          </p>
+          <div class="guide-specs">
+            <div class="spec-item">
+              <span class="spec-lbl">
+                <span class="en-only">Sunhemp Seed Rate</span>
+                <span class="te-only">జనుము విత్తన మోతాదు</span>
+              </span>
+              <span class="spec-val">
+                <span class="en-only">20 kg / acre</span>
+                <span class="te-only">ఎకరాకు 20 కిలోలు</span>
+              </span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-lbl">
+                <span class="en-only">Daincha Seed Rate</span>
+                <span class="te-only">జీలుగ విత్తన మోతాదు</span>
+              </span>
+              <span class="spec-val">
+                <span class="en-only">25 kg / acre</span>
+                <span class="te-only">ఎకరాకు 25 కిలోలు</span>
+              </span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-lbl">
+                <span class="en-only">Incorporation Time</span>
+                <span class="te-only">కలియదున్నే సమయం</span>
+              </span>
+              <span class="spec-val">
+                <span class="en-only">45 - 50 Days (Flowering)</span>
+                <span class="te-only">45 - 50 రోజులు (పూత దశ)</span>
+              </span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-lbl">
+                <span class="en-only">Organic Nitrogen Added</span>
+                <span class="te-only">అందే సేంద్రీయ నత్రజని</span>
+              </span>
+              <span class="spec-val">
+                <span class="en-only">60 - 80 kg N / hectare</span>
+                <span class="te-only">హెక్టారుకు 60 - 80 కిలోలు</span>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="guide-card">
+          <div class="guide-header">
+            <div class="guide-icon">🌾</div>
+            <div>
+              <h3 class="guide-title">
+                <span class="en-only">In-Situ Residue Mulching</span>
+                <span class="te-only">పంట వ్యర్థాల మల్చింగ్</span>
+              </h3>
+              <span class="guide-badge">
+                <span class="en-only">Moisture & Thermal Armor</span>
+                <span class="te-only">తేమ & ఉష్ణ రక్షణ</span>
+              </span>
+            </div>
+          </div>
+          <p class="guide-desc">
+            <span class="en-only">Shredding cotton and maize stubble instead of burning. Creates a protective mulch
+              carpet that keeps soil 5°C cooler and cuts moisture evaporation by over half.</span>
+            <span class="te-only">పంట వ్యర్థాలను తగులబెట్టకుండా నేలపై 5-8 సెం.మీ మందాన పరచడం. ఇది నేల తేమ ఆవిరి కాకుండా
+              కాపాడుతుంది మరియు సూక్ష్మజీవులను రక్షిస్తుంది.</span>
+          </p>
+          <div class="guide-specs">
+            <div class="spec-item">
+              <span class="spec-lbl">
+                <span class="en-only">Mulch Layer Depth</span>
+                <span class="te-only">మల్చింగ్ మందం</span>
+              </span>
+              <span class="spec-val">
+                <span class="en-only">5 - 8 cm Layer</span>
+                <span class="te-only">5 - 8 సెం.మీ మందాన</span>
+              </span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-lbl">
+                <span class="en-only">Evaporation Loss</span>
+                <span class="te-only">తేమ ఆవిరి కావడం</span>
+              </span>
+              <span class="spec-val">
+                <span class="en-only">Cuts by 55%</span>
+                <span class="te-only">55% తగ్గుతుంది</span>
+              </span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-lbl">
+                <span class="en-only">Soil Temp Reduction</span>
+                <span class="te-only">నేల ఉష్ణోగ్రత నియంత్రణ</span>
+              </span>
+              <span class="spec-val">
+                <span class="en-only">4°C - 6°C Cooler</span>
+                <span class="te-only">4°C - 6°C చల్లగా ఉంటుంది</span>
+              </span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-lbl">
+                <span class="en-only">Weed Suppression</span>
+                <span class="te-only">కలుపు నివారణ</span>
+              </span>
+              <span class="spec-val">
+                <span class="en-only">70% Weed Control</span>
+                <span class="te-only">70% కలుపు అణచివేత</span>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="guide-card">
+          <div class="guide-header">
+            <div class="guide-icon">💧</div>
+            <div>
+              <h3 class="guide-title">
+                <span class="en-only">Percolation Recharge Trenches</span>
+                <span class="te-only">ఇంకుడు కందకాలు & రీఛార్జ్ గుంతలు</span>
+              </h3>
+              <span class="guide-badge">
+                <span class="en-only">Aquifer Recharging</span>
+                <span class="te-only">భూగర్భ జలాల పెంపు</span>
+              </span>
+            </div>
+          </div>
+          <p class="guide-desc">
+            <span class="en-only">Excavating gravel-filled percolation trenches at lowest field corners. Directs
+              torrential flash storm runoff straight into deep aquifers instead of carving boundary gullies.</span>
+            <span class="te-only">పొలం దిగువ మూలల్లో కంకరతో నింపిన ఇంకుడు గుంతలు. ఇవి అదనపు వర్షపు నీటిని భూగర్భ
+              జలాల్లోకి మళ్లించి బోర్లలో నీటి మట్టాన్ని పెంచుతాయి.</span>
+          </p>
+          <div class="guide-specs">
+            <div class="spec-item">
+              <span class="spec-lbl">
+                <span class="en-only">Trench Dimensions</span>
+                <span class="te-only">కందకం కొలతలు</span>
+              </span>
+              <span class="spec-val">
+                <span class="en-only">3m × 0.6m × 1m Depth</span>
+                <span class="te-only">3మీ పొడవు × 0.6మీ వెడల్పు × 1మీ లోతు</span>
+              </span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-lbl">
+                <span class="en-only">Filter Media</span>
+                <span class="te-only">ఫిల్టర్ సామగ్రి</span>
+              </span>
+              <span class="spec-val">
+                <span class="en-only">40mm Gravel + Sand</span>
+                <span class="te-only">40మి.మీ కంకర + ఇసుక</span>
+              </span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-lbl">
+                <span class="en-only">Water Recharge Rate</span>
+                <span class="te-only">భూమిలోకి ఇంకే నీరు</span>
+              </span>
+              <span class="spec-val">
+                <span class="en-only">15,000 L / Rainfall Event</span>
+                <span class="te-only">ఒక్క వర్షానికి 15,000 లీటర్లు</span>
+              </span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-lbl">
+                <span class="en-only">Gully Elimination</span>
+                <span class="te-only">గండ్ల నివారణ</span>
+              </span>
+              <span class="spec-val">
+                <span class="en-only">100% Drainage Control</span>
+                <span class="te-only">100% నీటి కోత నియంత్రణ</span>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="guide-card">
+          <div class="guide-header">
+            <div class="guide-icon">🪴</div>
+            <div>
+              <h3 class="guide-title">
+                <span class="en-only">Vetiver (Khus) Bio-Fencing</span>
+                <span class="te-only">ఖస్ గడ్డి రక్షణ కంచె</span>
+              </h3>
+              <span class="guide-badge">
+                <span class="en-only">Perennial Root Anchor</span>
+                <span class="te-only">శాశ్వత వేర్ల పట్టు</span>
+              </span>
+            </div>
+          </div>
+          <p class="guide-desc">
+            <span class="en-only">Planting rows of Vetiver grass along bund crests and waterway banks. Massive
+              sponge-like fibrous roots penetrate up to 3 meters deep, binding loose soil particles.</span>
+            <span class="te-only">గట్ల అంచులలో ఖస్ గడ్డి నాటడం. దీని బలమైన వేర్లు 2-3 మీటర్ల లోతుకు వెళ్లి రాతిని కూడా
+              పట్టి ఉంచుతాయి, గట్లు తెగిపోకుండా శాశ్వత రక్షణనిస్తాయి.</span>
+          </p>
+          <div class="guide-specs">
+            <div class="spec-item">
+              <span class="spec-lbl">
+                <span class="en-only">Root Penetration</span>
+                <span class="te-only">వేర్ల లోతు</span>
+              </span>
+              <span class="spec-val">
+                <span class="en-only">2.5 - 3.0 Meters Deep</span>
+                <span class="te-only">2.5 - 3 మీటర్ల లోతుకు</span>
+              </span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-lbl">
+                <span class="en-only">Planting Spacing</span>
+                <span class="te-only">మొక్కల మధ్య దూరం</span>
+              </span>
+              <span class="spec-val">
+                <span class="en-only">10 - 15 cm along bunds</span>
+                <span class="te-only">గట్ల వెంట 10 - 15 సెం.మీ</span>
+              </span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-lbl">
+                <span class="en-only">Lifespan</span>
+                <span class="te-only">జీవిత కాలం</span>
+              </span>
+              <span class="spec-val">
+                <span class="en-only">Perennial (> 15 Years)</span>
+                <span class="te-only">బహువార్షికం (15 ఏళ్లకు పైగా)</span>
+              </span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-lbl">
+                <span class="en-only">Bund Stability</span>
+                <span class="te-only">గట్ల భద్రత</span>
+              </span>
+              <span class="spec-val">
+                <span class="en-only">Zero Monsoon Breaches</span>
+                <span class="te-only">వర్షాలకు గట్లు తెగిపోవు</span>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="guide-card">
+          <div class="guide-header">
+            <div class="guide-icon">🚜</div>
+            <div>
+              <h3 class="guide-title">
+                <span class="en-only">Laser Land Levelling</span>
+                <span class="te-only">లేజర్ లెవలర్ ద్వారా భూమి చదును</span>
+              </h3>
+              <span class="guide-badge">
+                <span class="en-only">Precision Topography</span>
+                <span class="te-only">ఖచ్చితమైన చదును</span>
+              </span>
+            </div>
+          </div>
+          <p class="guide-desc">
+            <span class="en-only">Leveling fields using tractor-mounted laser transmitters. Eliminates micro-depressions
+              where water ponds and high spots that erode rapidly during heavy irrigations.</span>
+            <span class="te-only">లేజర్ కిరణాల సహాయంతో పొలాన్ని సంపూర్ణంగా చదును చేయడం. ఇది నీరు సమానంగా అందేలా చేసి
+              నీటి వృధాను మరియు వాలు కోతను అరికడుతుంది.</span>
+          </p>
+          <div class="guide-specs">
+            <div class="spec-item">
+              <span class="spec-lbl">
+                <span class="en-only">Water Saving</span>
+                <span class="te-only">నీటి ఆదా</span>
+              </span>
+              <span class="spec-val">
+                <span class="en-only">25% - 30% Saved</span>
+                <span class="te-only">25% - 30% ఆదా అవుతుంది</span>
+              </span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-lbl">
+                <span class="en-only">Yield Increase</span>
+                <span class="te-only">దిగుబడి పెరుగుదల</span>
+              </span>
+              <span class="spec-val">
+                <span class="en-only">10% - 15% Higher Yield</span>
+                <span class="te-only">10% - 15% ఎక్కువ దిగుబడి</span>
+              </span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-lbl">
+                <span class="en-only">Operation Interval</span>
+                <span class="te-only">వినియోగ వ్యవధి</span>
+              </span>
+              <span class="spec-val">
+                <span class="en-only">Once in 3 - 4 Years</span>
+                <span class="te-only">3 - 4 ఏళ్లకు ఒకసారి</span>
+              </span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-lbl">
+                <span class="en-only">Hiring Access</span>
+                <span class="te-only">అద్దె కేంద్రాలు</span>
+              </span>
+              <span class="spec-val">
+                <span class="en-only">AP Agros / RBK Centers</span>
+                <span class="te-only">ఏపీ ఆగ్రోస్ / RBK కేంద్రాలు</span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Seasonal Soil Management Calendar -->
+      <div class="seasonal-section">
+        <div class="section-header text-center">
+          <div class="section-label">
+            <span class="en-only">YEAR-ROUND ROADMAP</span>
+            <span class="te-only">ఏడాది పొడవునా కార్యాచరణ</span>
+          </div>
+          <h3 class="section-title" style="color:#fff; font-size: 1.8rem;">
+            <span class="en-only">Andhra Pradesh Seasonal Soil Conservation Calendar</span>
+            <span class="te-only">ఆంధ్రప్రదేశ్ నేల సంరక్షణ సీజనల్ క్యాలెండర్</span>
+          </h3>
+        </div>
+
+        <div class="calendar-grid">
+          <!-- Season 1 -->
+          <div class="calendar-card">
+            <div class="season-period">
+              <span class="en-only">MAY — JUNE</span>
+              <span class="te-only">మే — జూన్</span>
+            </div>
+            <h4 class="season-title">
+              <span class="en-only">Pre-Kharif Preparation</span>
+              <span class="te-only">వేసవి / ఖరీఫ్ పూర్వ కాలం</span>
+            </h4>
+            <ul class="season-tasks">
+              <li>
+                <span class="en-only"><strong>Cross-Contour Deep Plowing:</strong> Perform summer plowing strictly
+                  across slopes to catch the earliest pre-monsoon showers.</span>
+                <span class="te-only"><strong>వాలుకు అడ్డంగా లోతు దుక్కులు:</strong> మొదటి వర్షపు నీటిని భూమిలోకి
+                  ఇంకింపజేయడానికి వాలుకు అడ్డంగా మాత్రమే వేసవి లోతు దుక్కులు చేయాలి.</span>
+              </li>
+              <li>
+                <span class="en-only"><strong>Field Bund Renovation:</strong> Repair and raise all field bunds to at
+                  least 45 cm before monsoon downpours arrive.</span>
+                <span class="te-only"><strong>గట్ల మరమ్మత్తులు:</strong> తొలకరి వర్షాలకు ముందే పొలం గట్లన్నింటినీ కనీసం
+                  45 సెం.మీ ఎత్తుకు పెంచి పటిష్టం చేయాలి.</span>
+              </li>
+              <li>
+                <span class="en-only"><strong>Green Manure Sowing:</strong> Sow Daincha and Sunhemp seeds under
+                  Pre-Monsoon Dry Sowing (PMDS).</span>
+                <span class="te-only"><strong>పచ్చిరొట్ట విత్తనం:</strong> ఖరీఫ్ పూర్వ పొడి విత్తుల ద్వారా జనుము లేదా
+                  జీలుగ విత్తనాలు చల్లుకోవాలి.</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Season 2 -->
+          <div class="calendar-card">
+            <div class="season-period">
+              <span class="en-only">JULY — OCTOBER</span>
+              <span class="te-only">జూలై — అక్టోబర్</span>
+            </div>
+            <h4 class="season-title">
+              <span class="en-only">Kharif Crop Care & Biomass</span>
+              <span class="te-only">ఖరీఫ్ పంట కాలం</span>
+            </h4>
+            <ul class="season-tasks">
+              <li>
+                <span class="en-only"><strong>Green Manure Incorporation:</strong> Plough green manure crop into soil at
+                  45-50 days flowering stage.</span>
+                <span class="te-only"><strong>పచ్చిరొట్ట కలియదున్నడం:</strong> విత్తిన 45-50 రోజులకు పూత దశలో పచ్చిరొట్ట
+                  పైరును నేలలోకి కలియదున్నాలి.</span>
+              </li>
+              <li>
+                <span class="en-only"><strong>Pulse Intercropping:</strong> Sow Redgram, Greengram, or Blackgram as
+                  intercrops to provide ground canopy cover.</span>
+                <span class="te-only"><strong>అంతర పంటల సాగు:</strong> పత్తి, మిరప లేదా మొక్కజొన్నలో కంది, పెసర వంటి
+                  పప్పుధాన్యాలను అంతర పంటలుగా వేయాలి.</span>
+              </li>
+              <li>
+                <span class="en-only"><strong>Drainage Inspection:</strong> Monitor water outlets during heavy rains to
+                  prevent localized gully formation.</span>
+                <span class="te-only"><strong>ప్రవాహ పర్యవేక్షణ:</strong> భారీ వర్షాలప్పుడు నీరు ఒకే చోట గండ్లు పడకుండా
+                  పొలం నుంచి నెమ్మదిగా వెళ్లేలా చూడాలి.</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Season 3 -->
+          <div class="calendar-card">
+            <div class="season-period">
+              <span class="en-only">NOVEMBER — DECEMBER</span>
+              <span class="te-only">నవంబర్ — డిసెంబర్</span>
+            </div>
+            <h4 class="season-title">
+              <span class="en-only">Post-Harvest & Residue Care</span>
+              <span class="te-only">పంట కోత తర్వాతి కాలం</span>
+            </h4>
+            <ul class="season-tasks">
+              <li>
+                <span class="en-only"><strong>Strict Zero Stubble Burning:</strong> Never burn crop residues; shred
+                  cotton/chilli stalks and spread on soil.</span>
+                <span class="te-only"><strong>వ్యర్థాలను కాల్చవద్దు:</strong> పంట కోసిన తర్వాత వ్యర్థాలను
+                  ఎట్టిపరిస్థితుల్లో కాల్చరాదు; పొలంలోనే సమానంగా పరచాలి.</span>
+              </li>
+              <li>
+                <span class="en-only"><strong>Surface Mulch Carpet:</strong> Maintain a 5-8 cm mulch blanket across the
+                  field to retain moisture.</span>
+                <span class="te-only"><strong>మల్చింగ్ ఆచ్ఛాదన:</strong> నేల తేమను కాపాడటానికి 5-8 సెం.మీ మందాన పంట
+                  వ్యర్థాలతో ఆచ్ఛాదన ఉంచాలి.</span>
+              </li>
+              <li>
+                <span class="en-only"><strong>Conservation Tillage:</strong> Practice zero or minimum tillage for sowing
+                  Rabi pulses and maize.</span>
+                <span class="te-only"><strong>కనిష్ట సేద్యం:</strong> రబీ పంటల విత్తడానికి భూమిని పదేపదే తిరగవేయకుండా
+                  కనిష్ట దుక్కులు చేయాలి.</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Season 4 -->
+          <div class="calendar-card">
+            <div class="season-period">
+              <span class="en-only">JANUARY — APRIL</span>
+              <span class="te-only">జనవరి — ఏప్రిల్</span>
+            </div>
+            <h4 class="season-title">
+              <span class="en-only">Rabi & Dry Summer Care</span>
+              <span class="te-only">రబీ మరియు వేసవి కాలం</span>
+            </h4>
+            <ul class="season-tasks">
+              <li>
+                <span class="en-only"><strong>Micro-Irrigation Drip:</strong> Irrigate through drip systems to prevent
+                  surface crusting and water waste.</span>
+                <span class="te-only"><strong>బిందు సేద్యం (డ్రిప్):</strong> ఉపరితల కోతను అరికట్టడానికి డ్రిప్ లేదా
+                  స్ప్రింక్లర్ పద్ధతిలోనే నీటిని అందించాలి.</span>
+              </li>
+              <li>
+                <span class="en-only"><strong>Jeevamrutham Application:</strong> Apply 200 Litres Jeevamrutham per acre
+                  every 15 days to multiply microbes.</span>
+                <span class="te-only"><strong>జీవామృతం వినియోగం:</strong> ప్రతి 15 రోజులకు ఎకరాకు 200 లీటర్ల ద్రవ
+                  జీవామృతం నీటితో కలిపి అందించాలి.</span>
+              </li>
+              <li>
+                <span class="en-only"><strong>Boundary Tree Planting:</strong> Plant Subabul, Neem, and Teak seedlings
+                  along farm perimeter edges.</span>
+                <span class="te-only"><strong>సరిహద్దు చెట్లు:</strong> బలమైన వేసవి గాలులను అడ్డుకోవడానికి పొలం గట్ల
+                  వెంట వేప, సుబాబుల్ నాటాలి.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 9: CSP Team & Institution -->
+  <section class="team-section" id="team">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="section-label">
+          <span class="en-only">ACADEMIC CREDENTIALS & TEAM</span>
+          <span class="te-only">ప్రాజెక్ట్ బృందం మరియు కళాశాల వివరాలు</span>
+        </div>
+        <h2 class="section-title">
+          <span class="en-only">Community Service Project Team</span>
+          <span class="te-only">కమ్యూనిటీ సర్వీస్ ప్రాజెక్ట్ బృందం</span>
+        </h2>
+        <p class="section-subtitle mx-auto text-center" style="text-align: center; margin-left: auto; margin-right: auto;">
+          <span class="en-only">
+            Department of Computer Science & Engineering<br>
+            <strong>Lakireddy Bali Reddy College of Engineering (Autonomous)</strong><br>
+            Mylavaram – 521230, NTR District, Andhra Pradesh (Affiliated to JNTUK, Kakinada)
+          </span>
+          <span class="te-only">
+            కంప్యూటర్ సైన్స్ అండ్ ఇంజనీరింగ్ విభాగం (CSE)<br>
+            <strong>లకిరెడ్డి బాలిరెడ్డి ఇంజనీరింగ్ కళాశాల (అటానమస్)</strong><br>
+            మైలవరం – 521230, ఎన్టీఆర్ జిల్లా, ఆంధ్రప్రదేశ్ (JNTUK అనుబంధం)
+          </span>
+        </p>
+        <div style="margin-top: 1rem;">
+          <span
+            style="background: var(--clr-soil-100); padding: 0.5rem 1.25rem; border-radius: 999px; font-weight: 600; color: var(--clr-soil-800);">
+            <span class="en-only">Faculty Guide: <strong>Ms. T. Vineetha</strong>, Assistant Professor, Dept. of
+              CSE</span>
+            <span class="te-only">గైడ్: <strong>శ్రీమతి టి. వినీత</strong>, అసిస్టెంట్ ప్రొఫెసర్, సి.ఎస్.ఇ విభాగం</span>
+          </span>
+        </div>
+      </div>
+
+      <div class="team-grid">
+        <div class="team-card">
+          <div class="team-avatar">T0</div>
+          <span class="team-roll">24761A05T0</span>
+          <h4 style="font-size: 1.05rem; margin-bottom: 0.25rem;">
+            <span class="en-only">Team Member 1</span>
+            <span class="te-only">సభ్యుడు 1</span>
+          </h4>
+          <p class="team-role">
+            <span class="en-only">Field Survey & Soil Health Analysis</span>
+            <span class="te-only">క్షేత్ర సర్వే & నేల విశ్లేషణ</span>
+          </p>
+        </div>
+
+        <div class="team-card">
+          <div class="team-avatar">T1</div>
+          <span class="team-roll">24761A05T1</span>
+          <h4 style="font-size: 1.05rem; margin-bottom: 0.25rem;">
+            <span class="en-only">Team Member 2</span>
+            <span class="te-only">సభ్యుడు 2</span>
+          </h4>
+          <p class="team-role">
+            <span class="en-only">Community Interaction & Questionnaire</span>
+            <span class="te-only">రైతు సంభాషణ & ప్రశ్నావళి</span>
+          </p>
+        </div>
+
+        <div class="team-card">
+          <div class="team-avatar">T2</div>
+          <span class="team-roll">24761A05T2</span>
+          <h4 style="font-size: 1.05rem; margin-bottom: 0.25rem;">
+            <span class="en-only">Team Member 3</span>
+            <span class="te-only">సభ్యుడు 3</span>
+          </h4>
+          <p class="team-role">
+            <span class="en-only">Data Compilation & Geo-Tagging</span>
+            <span class="te-only">డేటా సమీకరణ & జియో-ట్యాగింగ్</span>
+          </p>
+        </div>
+
+        <div class="team-card">
+          <div class="team-avatar">T4</div>
+          <span class="team-roll">24761A05T4</span>
+          <h4 style="font-size: 1.05rem; margin-bottom: 0.25rem;">
+            <span class="en-only">Team Member 4</span>
+            <span class="te-only">సభ్యుడు 4</span>
+          </h4>
+          <p class="team-role">
+            <span class="en-only">Documentation & Report Compilation</span>
+            <span class="te-only">నివేదిక రచన & డాక్యుమెంటేషన్</span>
+          </p>
+        </div>
+
+        <div class="team-card">
+          <div class="team-avatar">T5</div>
+          <span class="team-roll">24761A05T5</span>
+          <h4 style="font-size: 1.05rem; margin-bottom: 0.25rem;">
+            <span class="en-only">Team Member 5</span>
+            <span class="te-only">సభ్యుడు 5</span>
+          </h4>
+          <p class="team-role">
+            <span class="en-only">Web Development & Telugu Localization</span>
+            <span class="te-only">వెబ్ అప్లికేషన్ & తెలుగు అనువాదం</span>
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 10: Local Contacts & Helpline -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="section-label">
+          <span class="en-only">LOCAL HELPLINE & EXTENSION OFFICES</span>
+          <span class="te-only">రైతు సహాయ కేంద్రాలు & సంప్రదింపులు</span>
+        </div>
+        <h2 class="section-title">
+          <span class="en-only">Get Local Support & Advisory</span>
+          <span class="te-only">సహాయం కోసం సంప్రదించవలసిన నంబర్లు</span>
+        </h2>
+        <p class="section-subtitle">
+          <span class="en-only">Official agricultural extension officers serving Chandragudem Village and Mylavaram
+            Mandal.</span>
+          <span class="te-only">చంద్రగూడెం గ్రామానికి మరియు మైలవరం మండలానికి సేవలందిస్తున్న వ్యవసాయ అధికారులు.</span>
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <div class="contact-emoji">🏢</div>
+          <h3 class="contact-title">
+            <span class="en-only">Chandragudem RBK Center</span>
+            <span class="te-only">చంద్రగూడెం రైతు భరోసా కేంద్రం</span>
+          </h3>
+          <div class="contact-info">
+            <p><strong><span class="en-only">Village Agriculture Assistant (VAA)</span><span class="te-only">గ్రామ
+                  వ్యవసాయ సహాయకుడు (VAA)</span></strong></p>
+            <p><span class="en-only">Chandragudem Gram Panchayat, Mylavaram Mandal</span><span
+                class="te-only">చంద్రగూడెం గ్రామ పంచాయతీ, మైలవరం మండలం</span></p>
+            <p><span class="en-only">NTR District, Andhra Pradesh - 521230</span><span class="te-only">ఎన్టీఆర్ జిల్లా,
+                ఆంధ్రప్రదేశ్ - 521230</span></p>
+            <p><span class="en-only">Hours: 9:00 AM - 5:30 PM (Mon - Sat)</span><span class="te-only">సమయం: ఉదయం 9:00 -
+                సాయంత్రం 5:30 (సోమ - శని)</span></p>
+          </div>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-emoji">🌾</div>
+          <h3 class="contact-title">
+            <span class="en-only">Mylavaram Mandal Agriculture Office</span>
+            <span class="te-only">మైలవరం మండల వ్యవసాయ కార్యాలయం</span>
+          </h3>
+          <div class="contact-info">
+            <p><strong><span class="en-only">Mandal Agriculture Officer (MAO)</span><span class="te-only">మండల వ్యవసాయ
+                  అధికారి (MAO)</span></strong></p>
+            <p><span class="en-only">Near Tahsildar Office, Mylavaram - 521230</span><span class="te-only">తహసీల్దార్
+                కార్యాలయం దగ్గర, మైలవరం - 521230</span></p>
+            <p>Phone: 08659-222345 / 1800-425-3030</p>
+            <p>Email: mao.mylavaram@ap.gov.in</p>
+          </div>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-emoji">📞</div>
+          <h3 class="contact-title">
+            <span class="en-only">Kisan Call Centre (Toll Free)</span>
+            <span class="te-only">కిసాన్ కాల్ సెంటర్ (టోల్ ఫ్రీ)</span>
+          </h3>
+          <div class="contact-info">
+            <p><strong>Toll Free: 1800-180-1551</strong></p>
+            <p><span class="en-only">Available in Telugu 24x7</span><span class="te-only">24 గంటలూ తెలుగులో ఉచిత సలహాలు
+                లభిస్తాయి</span></p>
+            <p><span class="en-only">Free agricultural expert consultation on soil testing, pests, and government
+                subsidies.</span><span class="te-only">మట్టి పరీక్ష, చీడపీడల నివారణ మరియు రాయితీలపై నిపుణుల
+                సలహాలు.</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-logo">
+        🌱 <span>SoilCare Chandragudem</span>
+      </div>
+      <p class="footer-text">
+        <span class="en-only">
+          Community Service Project (CSP) 2026 on "Soil Erosion Awareness & Effective Soil Management"<br>
+          Carried out at Chandragudem Village, Mylavaram Mandal, NTR District, Andhra Pradesh.<br>
+          Department of Computer Science & Engineering, Lakireddy Bali Reddy College of Engineering (Autonomous).
+        </span>
+        <span class="te-only">
+          కమ్యూనిటీ సర్వీస్ ప్రాజెక్ట్ (CSP) 2026 - "మృత్తికా క్రమక్షయ అవగాహన మరియు సమర్థవంతమైన నేల యాజమాన్యం"<br>
+          క్షేత్ర ప్రాంతం: చంద్రగూడెం గ్రామం, మైలవరం మండలం, ఎన్టీఆర్ జిల్లా, ఆంధ్రప్రదేశ్.<br>
+          కంప్యూటర్ సైన్స్ అండ్ ఇంజనీరింగ్ విభాగం, లకిరెడ్డి బాలిరెడ్డి ఇంజనీరింగ్ కళాశాల (అటానమస్).
+        </span>
+      </p>
+      <div class="footer-credits">
+        Roll Numbers: 24761A05T0 | 24761A05T1 | 24761A05T2 | 24761A05T4 | 24761A05T5 &bull; <span
+          class="en-only">Faculty Guide: Ms. T. Vineetha</span><span class="te-only">గైడ్: శ్రీమతి టి. వినీత</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
