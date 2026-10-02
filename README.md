@@ -1,12 +1,15 @@
 # 🌾 Community Service Project (CSP) 2026
 ## Soil Erosion Awareness and Effective Soil Management in Chandragudem
+
 ---
 
 ## 📌 Project Overview
 
 This **Community Service Project (CSP)** was conducted by third-year Computer Science & Engineering students from **Lakireddy Bali Reddy College of Engineering (Autonomous)**, Mylavaram, during the academic period 2025–2026.
 
-The project addresses **soil erosion, soil degradation, and practical soil management techniques** in **Chandragudem Village**, Mylavaram Mandal, NTR District, Andhra Pradesh. Through extensive field surveys, farmer interviews, and soil profile studies, our team developed actionable remediation strategies and an interactive bilingual digital platform to empower the local farming community.
+The project addresses **soil erosion, soil degradation, and practical soil management techniques** in **Chandragudem Village**, Mylavaram Mandal, NTR District, Andhra Pradesh. Through extensive field surveys, farmer interviews, and soil profile studies across 19 village sites, our team developed actionable remediation strategies and an interactive, bilingual digital platform to empower the local farming community.
+
+🔗 **Live Platform URL**: [https://soilcare.onrender.com/](https://soilcare.onrender.com/)
 
 ---
 
@@ -20,7 +23,7 @@ The project addresses **soil erosion, soil degradation, and practical soil manag
 | **University** | Jawaharlal Nehru Technological University Kakinada (JNTUK) |
 | **Academic Year** | 2025 – 2026 |
 | **Faculty Guide** | **Ms. T. Vineetha**, Assistant Professor, Dept. of CSE |
-| **Study Area** | Chandragudem Village, Mylavaram Mandal, NTR District, AP |
+| **Study Area** | Chandragudem Village, Mylavaram Mandal, NTR District, Andhra Pradesh |
 
 ### 👥 Project Team
 | Roll Number | Name / Project Role |
@@ -35,23 +38,37 @@ The project addresses **soil erosion, soil degradation, and practical soil manag
 
 ## 💻 Interactive Bilingual Web Platform (`/website`)
 
-A responsive, bilingual (**English** & **తెలుగు**) web application built for local farmers and field officers.
+A responsive, bilingual (**English** & **తెలుగు**) web application built for local farmers, student researchers, and agricultural extension officers.
 
 ### ✨ Key Features:
-- **🌐 Strict Single-Language Toggle**: Switch between clean English and native Telugu without mixed text.
-- **📊 Soil Erosion Risk Calculator**: Interactive risk assessment calculating slope, soil texture, rainfall intensity, tillage method, and vegetative cover to deliver immediate risk categorization and priority remediation steps in Telugu.
+- **🌐 Strict Single-Language Toggle**: Switch seamlessly between clean English and native Telugu without mixed sentences or broken text.
+- **📊 Soil Erosion Risk Calculator**: Interactive client-side tool calculating slope, soil texture, rainfall intensity, tillage method, and vegetative cover to deliver immediate risk classification (Low / Moderate / High / Severe) and tailored corrective actions.
 - **🧱 Living Soil Profile Architecture**: Visual breakdown of O, A, B, and C soil horizons with depth guidelines and root zone protection advice.
-- **📐 Technical Soil Conservation Engineering**: Precise engineering parameters for stone bunds, continuous contour trenches (CCT), vetiver grass buffers, check dams, and organic mulching.
-- **📅 Andhra Pradesh Seasonal Farming Calendar**: Month-by-month agricultural actions tailored for Kharif, Rabi, and Zaid seasons.
-- **🏛️ Government Welfare Scheme Directory**: Direct verified access and step-by-step guidance for **APMIP** (90% drip/sprinkler subsidy), **Yantra Seva CHC**, **Soil Health Card (SHC)**, and **PM-KUSUM**.
-- **📞 Emergency Support Directory**: Key contacts for Rythu Bharosa Kendram (RBK), Mandal Agricultural Officer (MAO), and Kisan Call Center (1551).
+- **🌧️ Local Causes & Consequences**: Detailed analysis of 6 primary erosion causes identified in Chandragudem (monsoon runoff, excess DAP/Urea, slope plowing, stubble burning, bare fallow fields, and bund tree felling) alongside their economic impacts.
+- **🛡️ 6 Practical Prevention Methods**: Clear guidance on contour bunding, green manuring (Sunhemp/Daincha), residue mulching, agroforestry windbreaks, zero tillage, and legume crop rotation.
+- **🧪 6-Step Soil Testing Guide**: Step-by-step field sampling protocol (zigzag pattern, 15 cm V-cut, quartering method, and RSK submission).
+- **📐 Technical Blueprint Field Guide**: Engineering parameters for contour bunds (45–60 cm height, 1.2–1.5 m base), green manure incorporation timings, percolation trenches (3m × 0.6m × 1m), vetiver root bio-fencing, and laser leveling.
+- **📅 Andhra Pradesh Seasonal Farming Calendar**: Month-by-month agricultural actions divided into Pre-Kharif (May–June), Kharif (July–Oct), Post-Harvest (Nov–Dec), and Rabi/Dry Summer (Jan–April).
+- **🏛️ Government Welfare Scheme Directory**: Direct verified guidance for **APMIP** (drip/sprinkler subsidy), **Yantra Seva CHC**, **Soil Health Card (SHC)**, and **PM-KUSUM**.
+- **❓ Frequently Asked Questions (FAQ)**: Interactive accordions addressing top farmer queries regarding green manure sourcing, mulching, and saline soil management.
+- **📞 Local Extension Helpline Directory**: Verified contact points for **Chandragudem Rythu Seva Kendram (RSK)** Village Agriculture Assistant (VAA), Mylavaram Mandal Agricultural Officer (MAO), and Kisan Call Center (1551).
 
 ---
 
-## 📄 Academic Project Reports
+## 🛠️ Technology Stack
 
-- **Microsoft Word Format**: [`csp_report.docx`](csp_report.docx) — Formal 2026 report with Certificate, Declaration, Acknowledgements, Objectives, Methodology, Geo-tagged Field Documentation, Socio-Economic Analysis, and References.
-- **Printable HTML Format**: [`csp_report.html`](csp_report.html) — Open in any browser and use the print button to generate a clean PDF.
+- **Frontend**: HTML5 (Semantic Structure)
+- **Styling**: Vanilla CSS3 (Custom Responsive Grid, CSS Variables, Glassmorphism)
+- **Logic**: Vanilla JavaScript (ES6+ client-side calculator, dynamic language toggling, DOM accordion management)
+- **Design**: Clean, responsive layout with zero heavy framework bloat for fast loading on rural 3G/4G networks.
 
 ---
 
+## 🚀 Running Locally
+
+No package managers or build steps required:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/HuesTarun/csp-project.git
+   cd csp-project/website
