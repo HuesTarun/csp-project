@@ -176,33 +176,6 @@ ol {
   margin-right: auto;
 }
 
-/* --- Reveal Animation --- */
-.reveal {
-  opacity: 0;
-  transform: translateY(40px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
-}
-
-.reveal.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.reveal-delay-1 {
-  transition-delay: 0.1s;
-}
-
-.reveal-delay-2 {
-  transition-delay: 0.2s;
-}
-
-.reveal-delay-3 {
-  transition-delay: 0.3s;
-}
-
-.reveal-delay-4 {
-  transition-delay: 0.4s;
-}
 
 /* ===========================
    NAVIGATION
@@ -348,8 +321,7 @@ ol {
   align-items: center;
   position: relative;
   overflow: hidden;
-  background: linear-gradient(135deg, rgba(8, 38, 16, 0.86) 0%, rgba(18, 48, 24, 0.78) 50%, rgba(26, 18, 11, 0.88) 100%),
-    url('images/hero_green_field.jpg') center/cover no-repeat;
+  background: linear-gradient(135deg, var(--clr-soil-900) 0%, #133a1e 50%, var(--clr-green-900) 100%);
   padding-top: 80px;
 }
 
@@ -515,6 +487,7 @@ ol {
   align-items: center;
   justify-content: center;
 }
+
 
 .hero-illustration {
   width: 100%;
@@ -689,36 +662,6 @@ ol {
   position: relative;
 }
 
-.about-image-card {
-  background: linear-gradient(135deg, var(--clr-soil-100), var(--clr-green-100));
-  border-radius: var(--card-radius);
-  padding: 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  aspect-ratio: 4/3;
-  font-size: 8rem;
-  position: relative;
-  overflow: hidden;
-  box-shadow: var(--shadow-lg);
-}
-
-.about-image-card::before {
-  content: '';
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: conic-gradient(from 0deg, transparent 0deg, rgba(46, 170, 94, 0.05) 60deg, transparent 120deg);
-  animation: slow-rotate 20s linear infinite;
-}
-
-@keyframes slow-rotate {
-  to {
-    transform: rotate(360deg);
-  }
-}
 
 .erosion-types-list {
   display: flex;
@@ -860,7 +803,8 @@ ol {
    =========================== */
 .effects {
   padding: var(--section-padding);
-  background: var(--clr-soil-900);
+  background: linear-gradient(135deg, rgba(26, 18, 11, 0.92) 0%, rgba(38, 26, 16, 0.90) 100%),
+    url('images/effect_cracked_earth.jpg') center/cover no-repeat;
   color: var(--clr-text-on-dark);
   position: relative;
   overflow: hidden;
@@ -1248,6 +1192,7 @@ body[data-lang="te"] .section-title {
    RESPONSIVE — TABLET (≤ 900px)
    =========================== */
 @media (max-width: 900px) {
+
   /* --- Hero --- */
   .hero-content {
     grid-template-columns: 1fr;
@@ -1349,6 +1294,7 @@ body[data-lang="te"] .section-title {
       opacity: 0;
       transform: translateY(-12px);
     }
+
     to {
       opacity: 1;
       transform: translateY(0);
@@ -1381,6 +1327,7 @@ body[data-lang="te"] .section-title {
       padding-bottom: 1.25rem;
       gap: 0.15rem;
     }
+
     .nav-links a {
       padding: 0.35rem 1rem;
       font-size: 0.88rem;
@@ -1401,10 +1348,12 @@ body[data-lang="te"] .section-title {
   .nav-hamburger.open span:nth-child(1) {
     transform: translateY(7px) rotate(45deg);
   }
+
   .nav-hamburger.open span:nth-child(2) {
     opacity: 0;
     transform: scaleX(0);
   }
+
   .nav-hamburger.open span:nth-child(3) {
     transform: translateY(-7px) rotate(-45deg);
   }
@@ -1625,14 +1574,13 @@ body[data-lang="te"] .section-title {
     padding: 1.25rem;
   }
 
-  .form-select,
-  .form-input {
+  .form-select {
     padding: 0.8rem 0.9rem;
     font-size: 0.9rem;
   }
 
   /* Calc result header — stack vertically */
-  .calc-result-box > div:first-child {
+  .calc-result-box>div:first-child {
     flex-direction: column;
     align-items: flex-start;
     gap: 0.5rem;
@@ -1719,8 +1667,9 @@ body[data-lang="te"] .section-title {
     font-size: clamp(1.6rem, 8vw, 2rem);
   }
 
-  .nav-logo > span:last-child {
-    display: none; /* show only icon on tiny screens */
+  .nav-logo>span:last-child {
+    display: none;
+    /* show only icon on tiny screens */
   }
 
   .team-grid {
@@ -1852,7 +1801,7 @@ body[data-lang="te"] .section-title {
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: var(--card-radius);
   padding: 1.75rem;
-  transition: var(--transition-normal);
+  transition: var(--transition-smooth);
   display: flex;
   flex-direction: column;
 }
@@ -2001,7 +1950,7 @@ body[data-lang="te"] .section-title {
 }
 
 .season-tasks li::before {
-  content: '▸';
+  content: '\25B8';
   position: absolute;
   left: 0;
   color: var(--clr-sun-400);
@@ -2050,8 +1999,7 @@ body[data-lang="te"] .section-title {
   margin-bottom: 0.5rem;
 }
 
-.form-select,
-.form-input {
+.form-select {
   width: 100%;
   padding: 0.85rem 1rem;
   border: 1.5px solid var(--clr-soil-200);
@@ -2064,8 +2012,7 @@ body[data-lang="te"] .section-title {
   transition: var(--transition-fast);
 }
 
-.form-select:focus,
-.form-input:focus {
+.form-select:focus {
   border-color: var(--clr-green-600);
   box-shadow: 0 0 0 3px rgba(46, 170, 94, 0.15);
 }
@@ -2177,7 +2124,7 @@ body[data-lang="te"] .section-title {
   border-radius: var(--card-radius);
   padding: 1.75rem 1.25rem;
   text-align: center;
-  transition: var(--transition-normal);
+  transition: var(--transition-smooth);
 }
 
 .team-card:hover {
