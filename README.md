@@ -47,8 +47,7 @@ A responsive, bilingual (**English** & **తెలుగు**) web application b
 - **🌧️ Local Causes & Consequences**: Detailed analysis of 6 primary erosion causes identified in Chandragudem (monsoon runoff, excess DAP/Urea, slope plowing, stubble burning, bare fallow fields, and bund tree felling) alongside their economic impacts.
 - **🛡️ 6 Practical Prevention Methods**: Clear guidance on contour bunding, green manuring (Sunhemp/Daincha), residue mulching, agroforestry windbreaks, zero tillage, and legume crop rotation.
 - **🧪 6-Step Soil Testing Guide**: Step-by-step field sampling protocol (zigzag pattern, 15 cm V-cut, quartering method, and RSK submission).
-- **📐 Technical Blueprint Field Guide**: Engineering parameters for contour bunds (45–60 cm height, 1.2–1.5 m base), green manure incorporation timings, percolation trenches (3m × 0.6m × 1m), vetiver root bio-fencing, and laser leveling.
-- **📅 Andhra Pradesh Seasonal Farming Calendar**: Month-by-month agricultural actions divided into Pre-Kharif (May–June), Kharif (July–Oct), Post-Harvest (Nov–Dec), and Rabi/Dry Summer (Jan–April).
+- **📐 Technical Blueprint Field Guide**: Engineering parameters for contour bunds (45–60 cm height, 1.2–1.5 m base), green manure incorporation timings, percolation trenches (3m × 0.6m × 1m), vetiver root bio-fencing
 - **🏛️ Government Welfare Scheme Directory**: Direct verified guidance for **APMIP** (drip/sprinkler subsidy), **Yantra Seva CHC**, **Soil Health Card (SHC)**, and **PM-KUSUM**.
 - **❓ Frequently Asked Questions (FAQ)**: Interactive accordions addressing top farmer queries regarding green manure sourcing, mulching, and saline soil management.
 - **📞 Local Extension Helpline Directory**: Verified contact points for **Chandragudem Rythu Seva Kendram (RSK)** Village Agriculture Assistant (VAA), Mylavaram Mandal Agricultural Officer (MAO), and Kisan Call Center (1551).
@@ -61,14 +60,3 @@ A responsive, bilingual (**English** & **తెలుగు**) web application b
 - **Styling**: Vanilla CSS3 (Custom Responsive Grid, CSS Variables, Glassmorphism)
 - **Logic**: Vanilla JavaScript (ES6+ client-side calculator, dynamic language toggling, DOM accordion management)
 - **Design**: Clean, responsive layout with zero heavy framework bloat for fast loading on rural 3G/4G networks.
-
----
-
-## 🚀 Running Locally
-
-No package managers or build steps required:
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/HuesTarun/csp-project.git
-   cd csp-project/website
