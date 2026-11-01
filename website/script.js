@@ -321,26 +321,7 @@ function toggleMenu(open) {
   }
 }
 
-// 9. Create floating particles in the hero section
-function makeParticles() {
-  var box = document.getElementById('particles');
-  if (!box) return;
 
-  for (var i = 0; i < 18; i++) {
-    var dot = document.createElement('div');
-    var size = Math.random() * 8 + 4;
-
-    dot.className = 'particle';
-    dot.style.width = size + 'px';
-    dot.style.height = size + 'px';
-    dot.style.left = Math.random() * 100 + '%';
-    dot.style.top = Math.random() * 100 + '%';
-    dot.style.animationDuration = Math.random() * 12 + 8 + 's';
-    dot.style.animationDelay = Math.random() * 5 + 's';
-
-    box.appendChild(dot);
-  }
-}
 
 // 10. Initialize everything when page loads
 window.addEventListener('DOMContentLoaded', function () {
@@ -349,8 +330,7 @@ window.addEventListener('DOMContentLoaded', function () {
   if (!savedLang) { savedLang = 'en'; }
   setLanguage(savedLang);
 
-  // Create particles
-  makeParticles();
+
 
   // Add shadow under navbar after scrolling
   var navbar = document.getElementById('navbar');
